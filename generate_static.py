@@ -124,7 +124,7 @@ async def generate():
         github_actions_url=os.environ.get("ACTIONS_URL", "#"),
     )
 
-    output_path = ROOT / "output" / "news_dashboard.html"
+    output_path = ROOT / "output" / "index.html"
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(html, encoding="utf-8")
     print(f"HTML written to {output_path}")

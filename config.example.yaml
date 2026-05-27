@@ -18,4 +18,4 @@ schedule:
   time: "08:30"
 
 output:
-  html_path: "./output/news_dashboard.html"
+  html_path: "./output/index.html"
