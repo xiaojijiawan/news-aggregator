@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日新闻简报</title>
+<script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; background: #f5f5f5; color: #222; line-height: 1.8; }
+
+.toolbar { background: #fff; padding: 14px 32px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 8px rgba(0,0,0,.06); position: sticky; top:0; z-index: 100; gap: 16px; flex-wrap: wrap; }
+.toolbar .title { font-size: 18px; font-weight: 700; }
+.toolbar .info { font-size: 13px; color: #888; }
+.toolbar .actions { display: flex; align-items: center; gap: 12px; }
+.btn { padding: 8px 20px; border: none; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; transition: .2s; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+.btn-primary { background: #c62828; color: #fff; }
+.btn-primary:hover { background: #b71c1c; }
+.btn-secondary { background: #e0e0e0; color: #555; }
+.btn-secondary:hover { background: #ccc; }
+
+.header { background: linear-gradient(135deg, #c62828, #b71c1c); color: #fff; padding: 28px 40px; }
+.header h1 { font-size: 26px; font-weight: 800; }
+.header .meta { font-size: 13px; opacity: .75; margin-top: 4px; }
+
+.container { max-width: 960px; margin: 0 auto; padding: 24px 20px; }
+
+.empty { text-align: center; padding: 80px 20px; }
+.empty .icon { font-size: 64px; margin-bottom: 20px; opacity: .4; }
+.empty h2 { font-size: 20px; color: #666; margin-bottom: 8px; }
+.empty p { color: #999; font-size: 14px; margin-bottom: 24px; }
+
+.overall { background: #fff; border-radius: 14px; padding: 24px 28px; margin-bottom: 24px; box-shadow: 0 2px 12px rgba(0,0,0,.06); border-left: 4px solid #c62828; white-space: pre-line; }
+.overall h3 { font-size: 16px; color: #c62828; margin-bottom: 8px; }
+
+.stats-row { display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+.stat-card { flex:1; min-width: 110px; background: #fff; border-radius: 10px; padding: 14px 18px; box-shadow: 0 1px 6px rgba(0,0,0,.04); text-align: center; }
+.stat-card .num { font-size: 30px; font-weight: 700; color: #c62828; }
+.stat-card .label { font-size: 12px; color: #888; }
+
+.chart-row { display: flex; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+.chart-box { flex:1; min-width: 280px; background: #fff; border-radius: 12px; padding: 18px; box-shadow: 0 1px 6px rgba(0,0,0,.04); }
+.chart-box .chart-title { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+.chart-inner { width: 100%; height: 250px; }
+
+.cat-section { background: #fff; border-radius: 12px; margin-bottom: 16px; box-shadow: 0 1px 6px rgba(0,0,0,.04); overflow: hidden; }
+.cat-header { display: flex; align-items: center; gap: 10px; padding: 14px 24px; cursor: pointer; }
+.cat-tag { padding: 4px 14px; border-radius: 16px; font-size: 13px; font-weight: 600; color: #fff; }
+.cat-tag.tech { background: #1565c0; }
+.cat-tag.power { background: #f9a825; color: #333; }
+.cat-tag.metal { background: #4e342e; }
+.cat-tag.world { background: #00838f; }
+.cat-tag.policy { background: #c62828; }
+.cat-tag.finance { background: #e65100; }
+.cat-tag.livelihood { background: #2e7d32; }
+.cat-tag.hot { background: #6a1b9a; }
+.cat-count { font-size: 12px; color: #999; }
+.cat-digest { padding: 0 24px 14px; font-size: 14px; color: #333; line-height: 2; border-top: 1px solid #f0f0f0; margin: 0 24px; padding-top: 12px; }
+
+.news-toggle { padding: 0 24px 12px; font-size: 12px; color: #888; cursor: pointer; }
+.news-toggle:hover { color: #c62828; }
+.news-list { display: none; padding: 0 24px 14px; }
+.news-list.open { display: block; }
+.news-card { padding: 10px 0; border-bottom: 1px solid #f2f2f2; }
+.news-card:last-child { border-bottom: none; }
+.news-card h3 { font-size: 14px; font-weight: 500; }
+.news-card h3 a { color: #222; text-decoration: none; }
+.news-card h3 a:hover { color: #c62828; }
+.news-card .s { font-size: 12px; color: #777; margin-top: 2px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.news-card .src { font-size: 11px; color: #aaa; }
+
+.footer { text-align: center; padding: 30px; font-size: 12px; color: #bbb; }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <span class="title">每日新闻简报</span>
+  <div class="actions">
+    <span class="info">{{ generated_at }}</span>
+    <a class="btn btn-primary" href="{{ github_actions_url }}" target="_blank">手动更新</a>
+    <a class="btn btn-secondary" href="{{ repo_url }}" target="_blank">源码</a>
+  </div>
+</div>
+
+<div id="content">
+  {% include "dashboard_content.html" %}
+</div>
+
+<div class="footer">每日自动生成 &mdash; 数据来源：央视新闻 · 新华网 · 哔哩哔哩热搜</div>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  renderCharts();
+});
+
+function renderCharts() {
+  setTimeout(() => {
+    const pieEl = document.getElementById('pie-chart');
+    const srcEl = document.getElementById('source-chart');
+    if (!pieEl || !srcEl) return;
+
+    const data = {{ data | tojson | safe }};
+
+    const pie = echarts.init(pieEl);
+    const pieData = Object.entries(data.groups).map(([k,v]) => ({name:k, value:v.length}));
+    pie.setOption({
+      tooltip: { trigger:'item', formatter:'{b}: {c} ({d}%)' },
+      series: [{ type:'pie', radius:['40%','68%'], itemStyle:{borderRadius:5,borderColor:'#fff',borderWidth:2},
+        label:{show:true,formatter:'{b}\n{d}%'}, data:pieData,
+        color:['#1565c0','#f9a825','#4e342e','#00838f','#c62828','#e65100','#2e7d32','#6a1b9a','#546e7a'] }]
+    });
+
+    const src = {};
+    for (const items of Object.values(data.groups)) {
+      for (const it of items) src[it.source] = (src[it.source]||0) + 1;
+    }
+    const srcChart = echarts.init(srcEl);
+    srcChart.setOption({
+      tooltip: { trigger:'item', formatter:'{b}: {c} ({d}%)' },
+      series: [{ type:'pie', radius:['40%','68%'], itemStyle:{borderRadius:5,borderColor:'#fff',borderWidth:2},
+        label:{show:true,formatter:'{b}\n{d}%'}, data:Object.entries(src).map(([k,v])=>({name:k,value:v})),
+        color:['#c0392b','#f39c12','#2980b9','#27ae60','#8e44ad'] }]
+    });
+  }, 100);
+}
+</script>
+</body>
+</html>

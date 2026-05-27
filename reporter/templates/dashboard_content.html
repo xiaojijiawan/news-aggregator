@@ -1,0 +1,60 @@
+<div class="header">
+  <h1>每日新闻简报</h1>
+  <div class="meta">更新时间：{{ data.generated_at }} | 共 {{ data.total }} 条</div>
+</div>
+
+<div class="container">
+  {% if data.overall %}
+  <div class="overall">
+    <h3>今日综述</h3>
+    {{ data.overall }}
+  </div>
+  {% endif %}
+
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="num">{{ data.total }}</div>
+      <div class="label">今日收录</div>
+    </div>
+    {% for cat_name, cat_items in data.groups.items() %}
+    <div class="stat-card">
+      <div class="num">{{ cat_items|length }}</div>
+      <div class="label">{{ cat_name }}</div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="chart-row">
+    <div class="chart-box">
+      <div class="chart-title">新闻类别分布</div>
+      <div class="chart-inner" id="pie-chart"></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">来源占比</div>
+      <div class="chart-inner" id="source-chart"></div>
+    </div>
+  </div>
+
+  {% for cat_name, cat_items in data.groups.items() %}
+  {% set cat_class = {"科技":"tech","电力能源":"power","金属稀土":"metal","国际":"world","政策":"policy","财经":"finance","民生":"livelihood","热点":"hot"}.get(cat_name, "hot") %}
+  <div class="cat-section">
+    <div class="cat-header" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'">
+      <span class="cat-tag {{ cat_class }}">{{ cat_name }}</span>
+      <span class="cat-count">{{ cat_items|length }} 条</span>
+    </div>
+    {% if data.summaries.get(cat_name) %}
+    <div class="cat-digest"><p>{{ data.summaries[cat_name] }}</p></div>
+    {% endif %}
+    <div class="news-toggle" onclick="var nl=this.nextElementSibling;nl.classList.toggle('open');this.textContent=nl.classList.contains('open')?'收起 ▴':'展开全部新闻 ▾'">展开全部新闻 ▾</div>
+    <div class="news-list">
+      {% for item in cat_items %}
+      <div class="news-card">
+        <h3><a href="{{ item.url }}" target="_blank">{{ item.title }}</a></h3>
+        {% if item.summary %}<div class="s">{{ item.summary }}</div>{% endif %}
+        <div class="src">{{ item.source }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
