@@ -23,8 +23,8 @@ from classifier import classify_all
 from summarizer import configure as configure_llm, generate_briefing, generate_overall
 
 TEMPLATE_DIR = ROOT / "reporter" / "templates"
-CATEGORY_PRIORITY = {"科技": 0, "电力能源": 1, "金属稀土": 2, "国际": 3, "政策": 4, "财经": 5, "民生": 6, "热点": 7}
-CATEGORY_ORDER = ["科技", "电力能源", "金属稀土", "国际", "政策", "财经", "民生", "热点"]
+CATEGORY_PRIORITY = {"宏观政策": 0, "行业动态": 1, "国际局势": 2, "公司基本面": 3, "市场情绪": 4}
+CATEGORY_ORDER = ["宏观政策", "行业动态", "公司基本面", "市场情绪", "国际局势"]
 
 
 def cap_news_items(items: list[dict], limit: int = 50) -> list[dict]:
