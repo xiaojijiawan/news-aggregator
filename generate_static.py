@@ -18,6 +18,7 @@ if str(ROOT) not in sys.path:
 from fetcher.cctv import CctvFetcher
 from fetcher.xinhua import XinhuaFetcher
 from fetcher.bilibili import BilibiliFetcher
+from fetcher.toutiao import ToutiaoFetcher
 from classifier import classify_all
 from summarizer import configure as configure_llm, generate_briefing, generate_overall
 
@@ -69,7 +70,7 @@ async def generate():
 
     # Fetch from all sources
     print("Fetching news...")
-    fetchers = [CctvFetcher(), XinhuaFetcher(), BilibiliFetcher()]
+    fetchers = [CctvFetcher(), XinhuaFetcher(), BilibiliFetcher(), ToutiaoFetcher()]
     results = await asyncio.gather(*[f.fetch() for f in fetchers])
 
     all_items = []

@@ -13,6 +13,9 @@ sources:
   bilibili:
     rss: "https://api.bilibili.com/x/web-interface/search/square?limit=50"
     name: "哔哩哔哩热搜"
+  toutiao:
+    rss: "https://www.toutiao.com/hot-event/hot-board/?origin=toutiao_pc"
+    name: "今日头条"
 
 schedule:
   time: "08:30"

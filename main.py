@@ -7,6 +7,7 @@ from db import init_db, insert_news, get_today_news
 from fetcher.cctv import CctvFetcher
 from fetcher.xinhua import XinhuaFetcher
 from fetcher.bilibili import BilibiliFetcher
+from fetcher.toutiao import ToutiaoFetcher
 from dedup import dedup
 from classifier import classify_all
 from summarizer import configure as configure_llm, generate_briefing, generate_overall
@@ -24,7 +25,7 @@ def load_config():
 async def run_once(config: dict):
     configure_llm(config["deepseek"]["api_key"], config["deepseek"].get("model", "deepseek-chat"))
     print("开始抓取新闻...")
-    fetchers = [CctvFetcher(), XinhuaFetcher(), BilibiliFetcher()]
+    fetchers = [CctvFetcher(), XinhuaFetcher(), BilibiliFetcher(), ToutiaoFetcher()]
     tasks = [f.fetch() for f in fetchers]
     results = await asyncio.gather(*tasks)
 
