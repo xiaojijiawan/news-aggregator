@@ -16,6 +16,12 @@ sources:
   toutiao:
     rss: "https://www.toutiao.com/hot-event/hot-board/?origin=toutiao_pc"
     name: "今日头条"
+  wallstreetcn:
+    rss: "https://api-one.wallstcn.com/apiv1/content/lives"
+    name: "华尔街见闻"
+  yicai:
+    rss: "https://www.yicai.com/api/ajax/getlatest"
+    name: "第一财经"
 
 schedule:
   time: "08:30"

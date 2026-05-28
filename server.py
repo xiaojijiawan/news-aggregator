@@ -16,6 +16,8 @@ from fetcher.cctv import CctvFetcher
 from fetcher.xinhua import XinhuaFetcher
 from fetcher.bilibili import BilibiliFetcher
 from fetcher.toutiao import ToutiaoFetcher
+from fetcher.wallstreetcn import WallstreetcnFetcher
+from fetcher.yicai import YicaiFetcher
 from fetcher.base import NewsItem
 from dedup import dedup
 from classifier import classify_all
@@ -86,7 +88,7 @@ def build_page_data(today_items: list[dict], summaries: dict[str, str],
 async def run_news_pipeline() -> dict:
     """Run the full pipeline and return page data."""
     config = load_config()
-    fetchers = [CctvFetcher(), XinhuaFetcher(), BilibiliFetcher(), ToutiaoFetcher()]
+    fetchers = [CctvFetcher(), XinhuaFetcher(), WallstreetcnFetcher(), YicaiFetcher(), ToutiaoFetcher(), BilibiliFetcher()]
     tasks = [f.fetch() for f in fetchers]
     results = await asyncio.gather(*tasks)
 
