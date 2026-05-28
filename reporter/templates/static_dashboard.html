@@ -46,11 +46,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC"
 .cat-section { background: #fff; border-radius: 12px; margin-bottom: 16px; box-shadow: 0 1px 6px rgba(0,0,0,.04); overflow: hidden; }
 .cat-header { display: flex; align-items: center; gap: 10px; padding: 14px 24px; cursor: pointer; }
 .cat-tag { padding: 4px 14px; border-radius: 16px; font-size: 13px; font-weight: 600; color: #fff; }
-.cat-tag.macro { background: #c62828; }
-.cat-tag.industry { background: #1565c0; }
-.cat-tag.company { background: #2e7d32; }
-.cat-tag.market { background: #e65100; }
-.cat-tag.international { background: #00838f; }
+.cat-tag.tech { background: #1565c0; }
+.cat-tag.energy { background: #2e7d32; }
+.cat-tag.resource { background: #e65100; }
+.cat-tag.power { background: #f9a825; color: #333; }
+.cat-tag.finance { background: #c62828; }
 .cat-count { font-size: 12px; color: #999; }
 .cat-digest { padding: 0 24px 14px; font-size: 14px; color: #333; line-height: 2; border-top: 1px solid #f0f0f0; margin: 0 24px; padding-top: 12px; }
 
@@ -105,7 +105,7 @@ function renderCharts() {
       tooltip: { trigger:'item', formatter:'{b}: {c} ({d}%)' },
       series: [{ type:'pie', radius:['40%','68%'], itemStyle:{borderRadius:5,borderColor:'#fff',borderWidth:2},
         label:{show:true,formatter:'{b}\n{d}%'}, data:pieData,
-        color:['#c62828','#1565c0','#2e7d32','#e65100','#00838f','#546e7a'] }]
+        color:['#1565c0','#2e7d32','#e65100','#f9a825','#c62828','#546e7a'] }]
     });
 
     const src = {};

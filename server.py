@@ -50,7 +50,7 @@ def get_template():
     return env.get_template("live_dashboard.html")
 
 
-CATEGORY_PRIORITY = {"宏观政策": 0, "行业动态": 1, "国际局势": 2, "公司基本面": 3, "市场情绪": 4}
+CATEGORY_PRIORITY = {"科技": 0, "能源": 1, "资源": 2, "电力": 3, "金融": 4}
 
 def cap_news_items(items: list[dict], limit: int = 50) -> list[dict]:
     """Keep top N items, prioritizing non-热点 categories."""
@@ -67,7 +67,7 @@ def build_page_data(today_items: list[dict], summaries: dict[str, str],
         cat = i.get("category", "热点")
         groups.setdefault(cat, []).append(i)
 
-    category_order = ["宏观政策", "行业动态", "公司基本面", "市场情绪", "国际局势"]
+    category_order = ["科技", "能源", "资源", "电力", "金融"]
     sorted_groups = {k: groups[k] for k in category_order if k in groups}
     for k in groups:
         if k not in sorted_groups:

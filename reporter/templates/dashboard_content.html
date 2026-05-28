@@ -36,7 +36,7 @@
   </div>
 
   {% for cat_name, cat_items in data.groups.items() %}
-  {% set cat_class = {"宏观政策":"macro","行业动态":"industry","公司基本面":"company","市场情绪":"market","国际局势":"international"}.get(cat_name, "market") %}
+  {% set cat_class = {"科技":"tech","能源":"energy","资源":"resource","电力":"power","金融":"finance"}.get(cat_name, "finance") %}
   <div class="cat-section">
     <div class="cat-header" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'">
       <span class="cat-tag {{ cat_class }}">{{ cat_name }}</span>
