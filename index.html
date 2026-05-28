@@ -46,11 +46,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC"
 .cat-section { background: #fff; border-radius: 12px; margin-bottom: 16px; box-shadow: 0 1px 6px rgba(0,0,0,.04); overflow: hidden; }
 .cat-header { display: flex; align-items: center; gap: 10px; padding: 14px 24px; cursor: pointer; }
 .cat-tag { padding: 4px 14px; border-radius: 16px; font-size: 13px; font-weight: 600; color: #fff; }
-.cat-tag.macro { background: #c62828; }
-.cat-tag.industry { background: #1565c0; }
-.cat-tag.company { background: #2e7d32; }
-.cat-tag.market { background: #e65100; }
-.cat-tag.international { background: #00838f; }
+.cat-tag.tech { background: #1565c0; }
+.cat-tag.energy { background: #2e7d32; }
+.cat-tag.resource { background: #e65100; }
+.cat-tag.power { background: #f9a825; color: #333; }
+.cat-tag.finance { background: #c62828; }
 .cat-count { font-size: 12px; color: #999; }
 .cat-digest { padding: 0 24px 14px; font-size: 14px; color: #333; line-height: 2; border-top: 1px solid #f0f0f0; margin: 0 24px; padding-top: 12px; }
 
@@ -74,7 +74,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC"
 <div class="toolbar">
   <span class="title">每日新闻简报</span>
   <div class="actions">
-    <span class="info">2026-05-28 10:25:38</span>
+    <span class="info">2026-05-28 10:36:53</span>
     <a class="btn btn-primary" href="https://github.com/xiaojijiawan/news-aggregator/actions/workflows/deploy.yml" target="_blank">手动更新</a>
     <a class="btn btn-secondary" href="https://github.com/xiaojijiawan/news-aggregator" target="_blank">源码</a>
   </div>
@@ -83,14 +83,14 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC"
 <div id="content">
   <div class="header">
   <h1>每日新闻简报</h1>
-  <div class="meta">更新时间：2026-05-28 10:25:38 | 共 50 条</div>
+  <div class="meta">更新时间：2026-05-28 10:36:53 | 共 50 条</div>
 </div>
 
 <div class="container">
   
   <div class="overall">
     <h3>今日综述</h3>
-    今日投资者最需要关注的是：中塞央行扩大本币互换协议及俄罗斯人民币主权债指引，利好跨境支付与人民币国际化，关注中油资本、中国交建。英国央行警告对冲基金加剧国债波动，全球避险情绪升温，短期利空风险偏好，利好黄金ETF（518880）及高股息防御板块如长江电力。光伏两项强制性国标发布，提升行业准入门槛，利好隆基绿能、通威股份等龙头。“九章四号”量子计算突破及AI智能体转向实际应用，利好国盾量子、科大讯飞；低空经济向县域渗透，利好中航高科。金钼股份澄清芯片材料传闻，但钼价年内涨超25%，实际利好钼业龙头。
+    航天员轮换常态化叠加“九章四号”量子计算突破，两部门发布AI计量指引，科技主线聚焦航天军工（航天电子）、量子计算（国盾量子）及AI计量（中科曙光）。光伏组件两项强制性国标发布，推动技术升级与产能出清，关注隆基绿能、晶科能源；欧盟未额外干预天然气市场，利好国内进口成本稳定，关注新奥股份。稀土出口管制强化供给收缩，商务部对日出口管制升级，利好稀土永磁自主可控，关注北方稀土、中科三环。钼价年初至今涨超25%，供需偏紧支撑价格，关注金钼股份，但需警惕芯片材料概念炒作降温。互联网云端招聘月叠加AI智能体平台发布，科技企业融资活跃，利好券商（东方财富）及AI应用（科大讯飞）。
   </div>
   
 
@@ -101,13 +101,18 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC"
     </div>
     
     <div class="stat-card">
-      <div class="num">10</div>
-      <div class="label">宏观政策</div>
+      <div class="num">44</div>
+      <div class="label">科技</div>
     </div>
     
     <div class="stat-card">
-      <div class="num">40</div>
-      <div class="label">行业动态</div>
+      <div class="num">3</div>
+      <div class="label">能源</div>
+    </div>
+    
+    <div class="stat-card">
+      <div class="num">3</div>
+      <div class="label">资源</div>
     </div>
     
   </div>
@@ -127,105 +132,24 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC"
   
   <div class="cat-section">
     <div class="cat-header" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'">
-      <span class="cat-tag macro">宏观政策</span>
-      <span class="cat-count">10 条</span>
+      <span class="cat-tag tech">科技</span>
+      <span class="cat-count">44 条</span>
     </div>
     
-    <div class="cat-digest"><p>【宏观政策】中塞央行扩大本币互换协议至50亿元，深化货币金融合作，利好跨境支付、人民币国际化相关标的（如中油资本、小商品城）。
+    <div class="cat-digest"><p>【科技】神舟二十一号与二十三号乘组完成在轨交接，航天员轮换常态化利好航天产业链；“九章四号”量子计算突破立方级算力，叠加两部门发布AI计量体系指引，推动量子与AI技术落地。利好航天军工（航天电子）、量子计算（国盾量子）、AI计量（中科曙光）。
 
-【国际局势】俄罗斯人民币主权债票面利率指引不高于7.75%，显示中俄金融合作深化，利好人民币跨境结算及一带一路概念（如中国交建、北方国际）。
+【资源】金钼股份澄清非芯片核心材料供应商，但钼价年初至今涨超25%，供需偏紧支撑价格。利好钼资源（金钼股份），利空芯片材料概念炒作。
 
-【市场情绪】英国央行警告对冲基金加剧国债波动，全球避险情绪或升温，短期利空风险偏好，利好黄金ETF（518880）及高股息防御板块（如长江电力）。</p></div>
+【金融】互联网企业云端招聘月6月开展，叠加AI智能体平台发布，科技企业融资活跃度提升，利好券商（东方财富）、AI应用（科大讯飞）。</p></div>
     
     <div class="news-toggle" onclick="var nl=this.nextElementSibling;nl.classList.toggle('open');this.textContent=nl.classList.contains('open')?'收起 ▴':'展开全部新闻 ▾'">展开全部新闻 ▾</div>
     <div class="news-list">
       
       <div class="news-card">
-        <h3><a href="https://www.news.cn/tech/20260528/d8479046e42d4b80be324604bda5aa78/c.html" target="_blank">“十五五”期间法院将完善AI生成物等方面裁判规则</a></h3>
+        <h3><a href="https://www.piyao.org.cn/" target="_blank">中国互联网联合辟谣平台</a></h3>
         
         <div class="src">新华网</div>
       </div>
-      
-      <div class="news-card">
-        <h3><a href="http://www.sasac.gov.cn" target="_blank">国务院国有资产监督管理委员会</a></h3>
-        
-        <div class="src">新华网</div>
-      </div>
-      
-      <div class="news-card">
-        <h3><a href="http://www.gqb.gov.cn" target="_blank">国务院侨务办公室</a></h3>
-        
-        <div class="src">新华网</div>
-      </div>
-      
-      <div class="news-card">
-        <h3><a href="http://www.hmo.gov.cn" target="_blank">国务院港澳事务办公室</a></h3>
-        
-        <div class="src">新华网</div>
-      </div>
-      
-      <div class="news-card">
-        <h3><a href="http://www.gwytb.gov.cn" target="_blank">国务院台湾事务办公室</a></h3>
-        
-        <div class="src">新华网</div>
-      </div>
-      
-      <div class="news-card">
-        <h3><a href="http://www.scio.gov.cn/index.htm" target="_blank">国务院新闻办公室</a></h3>
-        
-        <div class="src">新华网</div>
-      </div>
-      
-      <div class="news-card">
-        <h3><a href="http://www.drc.gov.cn" target="_blank">国务院发展研究中心</a></h3>
-        
-        <div class="src">新华网</div>
-      </div>
-      
-      <div class="news-card">
-        <h3><a href="https://wallstreetcn.com/livenews/3110662" target="_blank">俄罗斯人民币主权债券新的票面利率指引不高于7.75%。（IFX）</a></h3>
-        <div class="s">俄罗斯人民币主权债券新的票面利率指引不高于7.75%。（IFX）</div>
-        <div class="src">华尔街见闻</div>
-      </div>
-      
-      <div class="news-card">
-        <h3><a href="https://wallstreetcn.com/livenews/3110638" target="_blank">中塞（尔维亚）两国央行再次签署双边本币互换协议</a></h3>
-        <div class="s">经国务院批准，近日中国人民银行与塞尔维亚国家银行再次签署双边本币互换协议，互换规模由原来的15亿元人民币/270亿塞尔维亚第纳尔扩大至50亿元人民币/740亿塞尔维亚第纳尔，协议有效期五年，经双方同意可以展期。双方再次签署双边本币互换协议并扩大规模，有助于进一步深化两国货币金融合作，促进双边贸易和投资便利化，维护金融市场稳定。</div>
-        <div class="src">华尔街见闻</div>
-      </div>
-      
-      <div class="news-card">
-        <h3><a href="https://wallstreetcn.com/livenews/3110598" target="_blank">英国央行副行长Breeden：对冲基金是英国国债需求的重要来源。
-
-对冲基金会加剧英国国债的市场波动。</a></h3>
-        <div class="s">英国央行副行长Breeden：对冲基金是英国国债需求的重要来源。
-
-对冲基金会加剧英国国债的市场波动。</div>
-        <div class="src">华尔街见闻</div>
-      </div>
-      
-    </div>
-  </div>
-  
-  
-  <div class="cat-section">
-    <div class="cat-header" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'">
-      <span class="cat-tag industry">行业动态</span>
-      <span class="cat-count">40 条</span>
-    </div>
-    
-    <div class="cat-digest"><p>【宏观政策】光伏组件两项强制性国标发布，利好光伏龙头隆基绿能、通威股份，行业准入门槛提升加速优胜劣汰。
-
-【行业动态】“九章四号”量子计算突破，利好国盾量子、科大国创；AI智能体从聊天转向实际应用，利好科大讯飞、拓尔思；低空经济向县域渗透，利好中航高科、纵横股份。
-
-【公司基本面】金钼股份澄清芯片材料传闻，但钼价年内涨超25%，实际利好钼业龙头；再升科技航天业务收入极低且无在手订单，短期无实质影响。
-
-【市场情绪】国产大模型从免费转向价值竞争，市场风险偏好中性偏谨慎，关注AI应用落地标的。
-
-【国际局势】无直接影响。</p></div>
-    
-    <div class="news-toggle" onclick="var nl=this.nextElementSibling;nl.classList.toggle('open');this.textContent=nl.classList.contains('open')?'收起 ▴':'展开全部新闻 ▾'">展开全部新闻 ▾</div>
-    <div class="news-list">
       
       <div class="news-card">
         <h3><a href="https://www.news.cn/tech/20260528/fe877d159f684cea9aa1e2ce1822c9ec/c.html" target="_blank">神舟二十一号和神舟二十三号航天员乘组完成在轨交接</a></h3>
@@ -246,37 +170,19 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC"
       </div>
       
       <div class="news-card">
-        <h3><a href="https://www.news.cn/photo/20260528/36a961187a77493ea4daa50bedaca343/c.html" target="_blank">福建连江：云雾中的风电场</a></h3>
-        
-        <div class="src">新华网</div>
-      </div>
-      
-      <div class="news-card">
         <h3><a href="https://www.news.cn/fortune/20260528/4e6af91bc00c4ef59a3ca290fb351114/c.html" target="_blank">探短剧工厂，看AI如何重塑微短剧生产链</a></h3>
         
         <div class="src">新华网</div>
       </div>
       
       <div class="news-card">
-        <h3><a href="https://www.news.cn/politics/20260528/9f31aa6621f24cafb61b18bdcd080373/c.html" target="_blank">德兴铜矿党建引领绿色发展</a></h3>
-        
-        <div class="src">新华网</div>
-      </div>
-      
-      <div class="news-card">
-        <h3><a href="https://www.news.cn/photo/20260528/44cf4b00a65445dcb975fd10dd2756a3/c.html" target="_blank">蚕桑之乡迎来黄金茧丰收季</a></h3>
+        <h3><a href="https://education.news.cn/20260528/658fa2087e104054a0b84c0b4941cbdc/c.html" target="_blank">互联网企业云端招聘月活动将于6月开展</a></h3>
         
         <div class="src">新华网</div>
       </div>
       
       <div class="news-card">
         <h3><a href="https://www.news.cn/comments/20260527/18e7c8ada1fc4ed3a22f7eb423849e98/c.html" target="_blank">毕业论文审核，不能过度依赖AI</a></h3>
-        
-        <div class="src">新华网</div>
-      </div>
-      
-      <div class="news-card">
-        <h3><a href="https://www.news.cn/fortune/20260521/82885377693a4fa1905d495fe2fdb567/c.html" target="_blank">低空经济“飞入”县域</a></h3>
         
         <div class="src">新华网</div>
       </div>
@@ -306,13 +212,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC"
       </div>
       
       <div class="news-card">
-        <h3><a href="http://www.news.cn/government/20260528/0e402a4b31844004896457d35ff77ea1/c.html" target="_blank">“帮子女带娃可领补贴”是东拼西凑的“三无政策”</a></h3>
+        <h3><a href="https://www.news.cn/tech/20260528/d8479046e42d4b80be324604bda5aa78/c.html" target="_blank">“十五五”期间法院将完善AI生成物等方面裁判规则</a></h3>
         
         <div class="src">新华网</div>
       </div>
       
       <div class="news-card">
-        <h3><a href="https://www.piyao.org.cn/20260527/9d1b5ac868c3414c814e2618963b34c6/c.html" target="_blank">“成都试点育儿补贴延长到孩子6岁”不实</a></h3>
+        <h3><a href="http://www.news.cn/digital/20260510/bbe1c58d1a1c407abf806e20f1c38985/c.html" target="_blank">智赢未来・合规致远——新华GEO智能体平台发布会在京举行</a></h3>
         
         <div class="src">新华网</div>
       </div>
@@ -330,9 +236,41 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC"
       </div>
       
       <div class="news-card">
-        <h3><a href="https://www.news.cn/energy/20260528/46be70c6d6f34a629fa3d35ae3aa7780/c.html" target="_blank">光伏组件两项强制性国家标准发布</a></h3>
+        <h3><a href="https://www.news.cn/20260528/d32aa1c2c5d940359116fac5124f1f75/c.html" target="_blank">我科学家破解甘蔗增糖关键基因 已应用于指导育种</a></h3>
         
         <div class="src">新华网</div>
+      </div>
+      
+      <div class="news-card">
+        <h3><a href="http://www.piyao.org.cn/" target="_blank">中国互联网联合辟谣平台</a></h3>
+        
+        <div class="src">新华网</div>
+      </div>
+      
+      <div class="news-card">
+        <h3><a href="http://www.cac.gov.cn" target="_blank">国家互联网信息办公室</a></h3>
+        
+        <div class="src">新华网</div>
+      </div>
+      
+      <div class="news-card">
+        <h3><a href="http://www.news.cn//www.news.cn/downloads/20240104/certificates/certificate-01.jpg" target="_blank">互联网新闻信息许可证10120170002</a></h3>
+        
+        <div class="src">新华网</div>
+      </div>
+      
+      <div class="news-card">
+        <h3><a href="http://www.news.cn/newscenter/2008-02/22/content_7647209_1.htm" target="_blank">中国互联网视听节目服务自律公约</a></h3>
+        
+        <div class="src">新华网</div>
+      </div>
+      
+      <div class="news-card">
+        <h3><a href="https://wallstreetcn.com/livenews/3110675" target="_blank">两部门联手 系统布局人工智能计量能力建设</a></h3>
+        <div class="s">记者今天了解到，市场监管总局、国家发展改革委联合印发《人工智能计量体系和能力建设指引（2026版）》，系统布局人工智能计量能力建设。
+
+《指引》围绕基础支撑、通用技术、核心技术、计量技术规范、计量服务产业、智能赋能计量等六大部分系统布局，打通实验室创新与行业应用“最后一公里”。</div>
+        <div class="src">华尔街见闻</div>
       </div>
       
       <div class="news-card">
@@ -344,6 +282,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC"
       <div class="news-card">
         <h3><a href="https://wallstreetcn.com/livenews/3110653" target="_blank">再升科技：公司自2020年起向国际某知名航天公司直接供应“高硅氧纤维产品”，2025年该项产品业务收入占公司总营收比例极...</a></h3>
         <div class="s">再升科技：公司自2020年起向国际某知名航天公司直接供应“高硅氧纤维产品”，2025年该项产品业务收入占公司总营收比例极低，目前“高硅氧纤维产品”暂无在手订单。</div>
+        <div class="src">华尔街见闻</div>
+      </div>
+      
+      <div class="news-card">
+        <h3><a href="https://wallstreetcn.com/livenews/3110642" target="_blank">国家集成电路基金对中芯国际的多头持仓比例降至7.99%</a></h3>
+        <div class="s">据香港交易所披露，国家集成电路基金对中芯国际集成电路制造有限公司的多头持仓比例于2026年5月26日从8.08%降至7.99%。</div>
         <div class="src">华尔街见闻</div>
       </div>
       
@@ -360,15 +304,21 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC"
       </div>
       
       <div class="news-card">
+        <h3><a href="https://wallstreetcn.com/livenews/3110613" target="_blank">礼来发表最新研究：替尔泊肽早期干预2型糖尿病可带来更大获益</a></h3>
+        <div class="s">礼来公司聚焦2型糖尿病确诊早期阶段的研究——SURPASS-EARLY详细结果已发表。该研究显示，在为期两年的随访中，相较于常规强化治疗方案，接受替尔泊肽治疗的患者血糖改善幅度更大，60%的患者实现正常血糖水平，而常规强化治疗组的比例为24%。除血糖控制外，替尔泊肽在体重与腰围改善方面同样优于常规强化治疗组，并伴随血脂、β细胞功能及胰岛素敏感性等多项代谢指标改善。（界面）</div>
+        <div class="src">华尔街见闻</div>
+      </div>
+      
+      <div class="news-card">
         <h3><a href="https://wallstreetcn.com/livenews/3110592" target="_blank">恒生指数收盘跌1.27%，恒生科技指数跌0.39%</a></h3>
         <div class="s">中心通讯涨约13%，智谱涨约14%，剑桥科技涨约11%，华虹半导体涨约12%，小鹏集团涨约6%，泡泡玛特涨约5%。</div>
         <div class="src">华尔街见闻</div>
       </div>
       
       <div class="news-card">
-        <h3><a href="https://wallstreetcn.com/livenews/3110585" target="_blank">伦敦金属交易所(LME)：锌库存减少75吨，铜库存减少2200吨，铝库存减少1250吨，锡库存增加200吨，铅库存增加2...</a></h3>
-        <div class="s">伦敦金属交易所(LME)：锌库存减少75吨，铜库存减少2200吨，铝库存减少1250吨，锡库存增加200吨，铅库存增加29650吨，镍库存持平。</div>
-        <div class="src">华尔街见闻</div>
+        <h3><a href="https://www.yicai.com/news/103205741.html" target="_blank">两部门联手 系统布局人工智能计量能力建设</a></h3>
+        
+        <div class="src">第一财经</div>
       </div>
       
       <div class="news-card">
@@ -390,13 +340,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC"
       </div>
       
       <div class="news-card">
-        <h3><a href="https://www.yicai.com/news/103205667.html" target="_blank">天津：积极推动本市医疗机构、科研院所等采购脑机接口仪器设备</a></h3>
+        <h3><a href="https://www.yicai.com/news/103205678.html" target="_blank">南向资金丨中芯国际获净买入41.74亿港元</a></h3>
         
         <div class="src">第一财经</div>
       </div>
       
       <div class="news-card">
-        <h3><a href="https://www.yicai.com/news/103205663.html" target="_blank">天津：支持商业银行针对脑机接口产业特点创新信贷产品和服务模式</a></h3>
+        <h3><a href="https://www.yicai.com/news/103205667.html" target="_blank">天津：积极推动本市医疗机构、科研院所等采购脑机接口仪器设备</a></h3>
         
         <div class="src">第一财经</div>
       </div>
@@ -426,45 +376,122 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC"
       </div>
       
       <div class="news-card">
-        <h3><a href="https://www.yicai.com/news/103205641.html" target="_blank">工信部：用好“存量”政策，储备“增量”政策，坚持用法治化手段规范新能源汽车动力电池回收利用</a></h3>
+        <h3><a href="https://www.yicai.com/news/103205638.html" target="_blank">国家集成电路基金对中芯国际的多头持仓比例降至7.99%</a></h3>
         
         <div class="src">第一财经</div>
       </div>
       
       <div class="news-card">
-        <h3><a href="https://www.yicai.com/video/103205624.html" target="_blank">从写剧本到剪辑审核 AI时代内容创作者可以一人成军</a></h3>
-        
-        <div class="src">第一财经</div>
-      </div>
-      
-      <div class="news-card">
-        <h3><a href="https://www.toutiao.com/trending/7643967998655037481/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%224%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227643967998655037481%22%2C%22hot_board_impr_id%22%3A%222026052818252712B8EFE0045365518135%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%88%AA%E5%A4%A9%E5%91%98%E8%A6%81%E5%9B%9E%E5%AE%B6%E7%9A%84%E5%BF%AB%E4%B9%90%E5%85%A8%E5%86%99%E8%84%B8%E4%B8%8A%E4%BA%86%22%7D&rank=&style_id=40132&topic_id=7643967998655037481" target="_blank">航天员要回家的快乐全写脸上了</a></h3>
-        <div class="s">头条热榜热度 4579620</div>
+        <h3><a href="https://www.toutiao.com/trending/7643967998655037481/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%224%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227643967998655037481%22%2C%22hot_board_impr_id%22%3A%2220260528183639D05B29B846FBE5BCCB8A%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%88%AA%E5%A4%A9%E5%91%98%E8%A6%81%E5%9B%9E%E5%AE%B6%E7%9A%84%E5%BF%AB%E4%B9%90%E5%85%A8%E5%86%99%E8%84%B8%E4%B8%8A%E4%BA%86%22%7D&rank=&style_id=40132&topic_id=7643967998655037481" target="_blank">航天员要回家的快乐全写脸上了</a></h3>
+        <div class="s">头条热榜热度 4194715</div>
         <div class="src">今日头条</div>
       </div>
       
       <div class="news-card">
-        <h3><a href="https://www.toutiao.com/trending/7644726971875885065/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227644726971875885065%22%2C%22hot_board_impr_id%22%3A%222026052818252712B8EFE0045365518135%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BD%95%E5%B0%8F%E9%B9%8F%E7%A7%B0L4%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E6%9C%89%E6%9C%9B%E4%B8%A4%E5%B9%B4%E5%86%85%E5%AE%9E%E7%8E%B0%22%7D&rank=&style_id=40132&topic_id=7644726971875885065" target="_blank">何小鹏称L4自动驾驶有望两年内实现</a></h3>
-        <div class="s">头条热榜热度 1524423</div>
+        <h3><a href="https://www.toutiao.com/trending/7644426547360874502/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227644426547360874502%22%2C%22hot_board_impr_id%22%3A%2220260528183639D05B29B846FBE5BCCB8A%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%BB%8E%E7%9C%9F%E4%B8%BB%E5%85%9A%E7%A7%B0%E7%94%A8%E6%97%A0%E4%BA%BA%E6%9C%BA%E5%87%BB%E4%B8%AD%E4%BB%A5%E5%86%9B%E8%BF%90%E5%85%B5%E8%BD%A6%22%7D&rank=&style_id=40132&topic_id=7644426547360874502" target="_blank">黎真主党称用无人机击中以军运兵车</a></h3>
+        <div class="s">头条热榜热度 1543149</div>
         <div class="src">今日头条</div>
       </div>
       
       <div class="news-card">
-        <h3><a href="https://www.toutiao.com/trending/7644177291053301823/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227644177291053301823%22%2C%22hot_board_impr_id%22%3A%222026052818252712B8EFE0045365518135%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%8F%90%E5%89%8D%E5%90%AF%E5%8A%A8%E7%A8%80%E5%9C%9F%E5%87%BA%E5%8F%A3%E7%AE%A1%E5%88%B6%EF%BC%9F%E5%A4%96%E4%BA%A4%E9%83%A8%E5%9B%9E%E5%BA%94%22%7D&rank=&style_id=40132&topic_id=7644177291053301823" target="_blank">提前启动稀土出口管制？外交部回应</a></h3>
-        <div class="s">头条热榜热度 619784</div>
+        <h3><a href="https://www.toutiao.com/trending/7644873222827019819/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227644873222827019819%22%2C%22hot_board_impr_id%22%3A%2220260528183639D05B29B846FBE5BCCB8A%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%8D%9A%E4%B8%BB%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%BC%80%E5%90%AF%E7%B3%BB%E7%BB%9F%E7%BA%A7%E6%8D%A2%E9%81%93%22%7D&rank=&style_id=40132&topic_id=7644873222827019819" target="_blank">博主：中国半导体开启系统级换道</a></h3>
+        <div class="s">头条热榜热度 935967</div>
         <div class="src">今日头条</div>
       </div>
       
       <div class="news-card">
-        <h3><a href="https://www.toutiao.com/trending/7644779118072528946/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%228%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227644779118072528946%22%2C%22hot_board_impr_id%22%3A%222026052818252712B8EFE0045365518135%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%88%AA%E5%A4%A9%E5%91%98%E6%AD%A6%E9%A3%9E%E5%8D%B3%E5%B0%86%E5%9B%9E%E5%AE%B6%22%7D&rank=&style_id=40132&topic_id=7644779118072528946" target="_blank">航天员武飞即将回家</a></h3>
-        <div class="s">头条热榜热度 340144</div>
+        <h3><a href="https://www.toutiao.com/trending/7644779118072528946/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%228%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227644779118072528946%22%2C%22hot_board_impr_id%22%3A%2220260528183639D05B29B846FBE5BCCB8A%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%88%AA%E5%A4%A9%E5%91%98%E6%AD%A6%E9%A3%9E%E5%8D%B3%E5%B0%86%E5%9B%9E%E5%AE%B6%22%7D&rank=&style_id=40132&topic_id=7644779118072528946" target="_blank">航天员武飞即将回家</a></h3>
+        <div class="s">头条热榜热度 281907</div>
         <div class="src">今日头条</div>
       </div>
       
       <div class="news-card">
         <h3><a href="https://search.bilibili.com/all?keyword=AI%E6%94%B9%E5%86%99%E9%BB%91%E8%A2%8D%E7%BA%A0%E5%AF%9F%E9%98%9F%E7%BB%93%E5%B1%80" target="_blank">AI改写黑袍纠察队结局</a></h3>
-        <div class="s">热搜热度 1833946</div>
+        <div class="s">热搜热度 2054900</div>
         <div class="src">哔哩哔哩热搜</div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="cat-section">
+    <div class="cat-header" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'">
+      <span class="cat-tag energy">能源</span>
+      <span class="cat-count">3 条</span>
+    </div>
+    
+    <div class="cat-digest"><p>【科技】无直接相关新闻，暂不更新。
+
+【电力】无直接相关新闻，暂不更新。
+
+【资源】无直接相关新闻，暂不更新。
+
+【能源】  
+1. **光伏组件两项强制性国家标准发布**：利好光伏制造龙头，推动行业技术升级与淘汰落后产能。关注隆基绿能（601012）、晶科能源（688223）。  
+2. **欧盟未计划额外干预天然气市场**：利空欧洲天然气价格预期，但利好国内天然气进口成本稳定。关注新奥股份（600803）、广汇能源（600256）。  
+3. **福建连江风电场云雾中运营**：无直接投资信号，但反映风电运营稳定性，关注风电运营商龙源电力（001289）。
+
+【金融】无直接相关新闻，暂不更新。</p></div>
+    
+    <div class="news-toggle" onclick="var nl=this.nextElementSibling;nl.classList.toggle('open');this.textContent=nl.classList.contains('open')?'收起 ▴':'展开全部新闻 ▾'">展开全部新闻 ▾</div>
+    <div class="news-list">
+      
+      <div class="news-card">
+        <h3><a href="https://www.news.cn/photo/20260528/36a961187a77493ea4daa50bedaca343/c.html" target="_blank">福建连江：云雾中的风电场</a></h3>
+        
+        <div class="src">新华网</div>
+      </div>
+      
+      <div class="news-card">
+        <h3><a href="https://www.news.cn/energy/20260528/46be70c6d6f34a629fa3d35ae3aa7780/c.html" target="_blank">光伏组件两项强制性国家标准发布</a></h3>
+        
+        <div class="src">新华网</div>
+      </div>
+      
+      <div class="news-card">
+        <h3><a href="https://wallstreetcn.com/livenews/3110644" target="_blank">欧盟成员国未计划采取额外的天然气市场干预措施。（彭博）</a></h3>
+        <div class="s">欧盟成员国未计划采取额外的天然气市场干预措施。（彭博）</div>
+        <div class="src">华尔街见闻</div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="cat-section">
+    <div class="cat-header" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'">
+      <span class="cat-tag resource">资源</span>
+      <span class="cat-count">3 条</span>
+    </div>
+    
+    <div class="cat-digest"><p>【科技】商务部对日出口管制升级，涉及稀土等关键矿产，利好国内稀土永磁及军工材料自主可控。关注北方稀土、中科三环。
+
+【资源】稀土出口管制强化供给收缩预期，叠加德兴铜矿绿色转型，利好稀土及铜板块。关注北方稀土、江西铜业。
+
+【能源】欧盟拟对进口钢铁加税，或间接影响新能源设备出口成本，利空光伏支架、风电塔筒等出口型企业。关注金风科技、天合光能。</p></div>
+    
+    <div class="news-toggle" onclick="var nl=this.nextElementSibling;nl.classList.toggle('open');this.textContent=nl.classList.contains('open')?'收起 ▴':'展开全部新闻 ▾'">展开全部新闻 ▾</div>
+    <div class="news-list">
+      
+      <div class="news-card">
+        <h3><a href="https://www.news.cn/politics/20260528/9f31aa6621f24cafb61b18bdcd080373/c.html" target="_blank">德兴铜矿党建引领绿色发展</a></h3>
+        
+        <div class="src">新华网</div>
+      </div>
+      
+      <div class="news-card">
+        <h3><a href="https://www.news.cn/fortune/20260528/d83edcc5db674e11b44ceeee9a6609e4/c.html" target="_blank">回应欧盟拟对进口钢铁加税</a></h3>
+        
+        <div class="src">新华网</div>
+      </div>
+      
+      <div class="news-card">
+        <h3><a href="https://wallstreetcn.com/livenews/3110597" target="_blank">商务部：对日相关出口管制措施完全正当合理合法</a></h3>
+        <div class="s">在今天召开的商务部例行新闻发布会上，新闻发言人介绍，近期，中方将20家日本的相关实体列入管控名单，将20家日本相关实体列入关注名单，目的是制止日本再军事化和拥核企图，完全正当、合理、合法。
+
+商务部新闻发言人何亚东表示，中国政府依法依规对稀土等关键矿产实施出口管制，对合规民用的许可申请予以审核。当前中日关系面临着严重困难，根源在于日本首相高市早苗错误言行，责任完全在日方。我们敦促日方正视问题根源、切实反思纠错，为中日正常交流创造必要条件。（央视）</div>
+        <div class="src">华尔街见闻</div>
       </div>
       
     </div>
@@ -486,7 +513,7 @@ function renderCharts() {
     const srcEl = document.getElementById('source-chart');
     if (!pieEl || !srcEl) return;
 
-    const data = {"category_json": "{\"\u5b8f\u89c2\u653f\u7b56\": 10, \"\u884c\u4e1a\u52a8\u6001\": 40}", "generated_at": "2026-05-28 10:25:38", "groups": {"\u5b8f\u89c2\u653f\u7b56": [{"category": "\u5b8f\u89c2\u653f\u7b56", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u201c\u5341\u4e94\u4e94\u201d\u671f\u95f4\u6cd5\u9662\u5c06\u5b8c\u5584AI\u751f\u6210\u7269\u7b49\u65b9\u9762\u88c1\u5224\u89c4\u5219", "url": "https://www.news.cn/tech/20260528/d8479046e42d4b80be324604bda5aa78/c.html"}, {"category": "\u5b8f\u89c2\u653f\u7b56", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u56fd\u52a1\u9662\u56fd\u6709\u8d44\u4ea7\u76d1\u7763\u7ba1\u7406\u59d4\u5458\u4f1a", "url": "http://www.sasac.gov.cn"}, {"category": "\u5b8f\u89c2\u653f\u7b56", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u56fd\u52a1\u9662\u4fa8\u52a1\u529e\u516c\u5ba4", "url": "http://www.gqb.gov.cn"}, {"category": "\u5b8f\u89c2\u653f\u7b56", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u56fd\u52a1\u9662\u6e2f\u6fb3\u4e8b\u52a1\u529e\u516c\u5ba4", "url": "http://www.hmo.gov.cn"}, {"category": "\u5b8f\u89c2\u653f\u7b56", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u56fd\u52a1\u9662\u53f0\u6e7e\u4e8b\u52a1\u529e\u516c\u5ba4", "url": "http://www.gwytb.gov.cn"}, {"category": "\u5b8f\u89c2\u653f\u7b56", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u56fd\u52a1\u9662\u65b0\u95fb\u529e\u516c\u5ba4", "url": "http://www.scio.gov.cn/index.htm"}, {"category": "\u5b8f\u89c2\u653f\u7b56", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u56fd\u52a1\u9662\u53d1\u5c55\u7814\u7a76\u4e2d\u5fc3", "url": "http://www.drc.gov.cn"}, {"category": "\u5b8f\u89c2\u653f\u7b56", "content": "", "source": "\u534e\u5c14\u8857\u89c1\u95fb", "summary": "\u4fc4\u7f57\u65af\u4eba\u6c11\u5e01\u4e3b\u6743\u503a\u5238\u65b0\u7684\u7968\u9762\u5229\u7387\u6307\u5f15\u4e0d\u9ad8\u4e8e7.75%\u3002\uff08IFX\uff09", "title": "\u4fc4\u7f57\u65af\u4eba\u6c11\u5e01\u4e3b\u6743\u503a\u5238\u65b0\u7684\u7968\u9762\u5229\u7387\u6307\u5f15\u4e0d\u9ad8\u4e8e7.75%\u3002\uff08IFX\uff09", "url": "https://wallstreetcn.com/livenews/3110662"}, {"category": "\u5b8f\u89c2\u653f\u7b56", "content": "", "source": "\u534e\u5c14\u8857\u89c1\u95fb", "summary": "\u7ecf\u56fd\u52a1\u9662\u6279\u51c6\uff0c\u8fd1\u65e5\u4e2d\u56fd\u4eba\u6c11\u94f6\u884c\u4e0e\u585e\u5c14\u7ef4\u4e9a\u56fd\u5bb6\u94f6\u884c\u518d\u6b21\u7b7e\u7f72\u53cc\u8fb9\u672c\u5e01\u4e92\u6362\u534f\u8bae\uff0c\u4e92\u6362\u89c4\u6a21\u7531\u539f\u6765\u768415\u4ebf\u5143\u4eba\u6c11\u5e01/270\u4ebf\u585e\u5c14\u7ef4\u4e9a\u7b2c\u7eb3\u5c14\u6269\u5927\u81f350\u4ebf\u5143\u4eba\u6c11\u5e01/740\u4ebf\u585e\u5c14\u7ef4\u4e9a\u7b2c\u7eb3\u5c14\uff0c\u534f\u8bae\u6709\u6548\u671f\u4e94\u5e74\uff0c\u7ecf\u53cc\u65b9\u540c\u610f\u53ef\u4ee5\u5c55\u671f\u3002\u53cc\u65b9\u518d\u6b21\u7b7e\u7f72\u53cc\u8fb9\u672c\u5e01\u4e92\u6362\u534f\u8bae\u5e76\u6269\u5927\u89c4\u6a21\uff0c\u6709\u52a9\u4e8e\u8fdb\u4e00\u6b65\u6df1\u5316\u4e24\u56fd\u8d27\u5e01\u91d1\u878d\u5408\u4f5c\uff0c\u4fc3\u8fdb\u53cc\u8fb9\u8d38\u6613\u548c\u6295\u8d44\u4fbf\u5229\u5316\uff0c\u7ef4\u62a4\u91d1\u878d\u5e02\u573a\u7a33\u5b9a\u3002", "title": "\u4e2d\u585e\uff08\u5c14\u7ef4\u4e9a\uff09\u4e24\u56fd\u592e\u884c\u518d\u6b21\u7b7e\u7f72\u53cc\u8fb9\u672c\u5e01\u4e92\u6362\u534f\u8bae", "url": "https://wallstreetcn.com/livenews/3110638"}, {"category": "\u5b8f\u89c2\u653f\u7b56", "content": "", "source": "\u534e\u5c14\u8857\u89c1\u95fb", "summary": "\u82f1\u56fd\u592e\u884c\u526f\u884c\u957fBreeden\uff1a\u5bf9\u51b2\u57fa\u91d1\u662f\u82f1\u56fd\u56fd\u503a\u9700\u6c42\u7684\u91cd\u8981\u6765\u6e90\u3002\n\n\u5bf9\u51b2\u57fa\u91d1\u4f1a\u52a0\u5267\u82f1\u56fd\u56fd\u503a\u7684\u5e02\u573a\u6ce2\u52a8\u3002", "title": "\u82f1\u56fd\u592e\u884c\u526f\u884c\u957fBreeden\uff1a\u5bf9\u51b2\u57fa\u91d1\u662f\u82f1\u56fd\u56fd\u503a\u9700\u6c42\u7684\u91cd\u8981\u6765\u6e90\u3002\n\n\u5bf9\u51b2\u57fa\u91d1\u4f1a\u52a0\u5267\u82f1\u56fd\u56fd\u503a\u7684\u5e02\u573a\u6ce2\u52a8\u3002", "url": "https://wallstreetcn.com/livenews/3110598"}], "\u884c\u4e1a\u52a8\u6001": [{"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u795e\u821f\u4e8c\u5341\u4e00\u53f7\u548c\u795e\u821f\u4e8c\u5341\u4e09\u53f7\u822a\u5929\u5458\u4e58\u7ec4\u5b8c\u6210\u5728\u8f68\u4ea4\u63a5", "url": "https://www.news.cn/tech/20260528/fe877d159f684cea9aa1e2ce1822c9ec/c.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u70ed\u70b9\u8ffd\u8e2a\u4e28\u201c\u97ec\uff08\u03c4\uff09\u5b9a\u5f8b\u201d\u5c06\u5982\u4f55\u5f71\u54cd\u82af\u7247\u4ea7\u4e1a\uff1f", "url": "https://www.news.cn/video/20260528/575d66e2ccb7402ea29f0b3053979953/c.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u65b0\u534e\u7f51\u79d1\u666e\u4e28\u91cf\u5b50\u4e0d\u795e\u79d8\uff1a\u96f6\u57fa\u7840\u5e26\u4f60\u89e3\u9501\u5fae\u89c2\u9ad8\u79d1\u6280", "url": "https://www.news.cn/tech/20260528/ff31ef51c0014e378c96496c0edbfa6c/c.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u798f\u5efa\u8fde\u6c5f\uff1a\u4e91\u96fe\u4e2d\u7684\u98ce\u7535\u573a", "url": "https://www.news.cn/photo/20260528/36a961187a77493ea4daa50bedaca343/c.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u63a2\u77ed\u5267\u5de5\u5382\uff0c\u770bAI\u5982\u4f55\u91cd\u5851\u5fae\u77ed\u5267\u751f\u4ea7\u94fe", "url": "https://www.news.cn/fortune/20260528/4e6af91bc00c4ef59a3ca290fb351114/c.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u5fb7\u5174\u94dc\u77ff\u515a\u5efa\u5f15\u9886\u7eff\u8272\u53d1\u5c55", "url": "https://www.news.cn/politics/20260528/9f31aa6621f24cafb61b18bdcd080373/c.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u8695\u6851\u4e4b\u4e61\u8fce\u6765\u9ec4\u91d1\u8327\u4e30\u6536\u5b63", "url": "https://www.news.cn/photo/20260528/44cf4b00a65445dcb975fd10dd2756a3/c.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u6bd5\u4e1a\u8bba\u6587\u5ba1\u6838\uff0c\u4e0d\u80fd\u8fc7\u5ea6\u4f9d\u8d56AI", "url": "https://www.news.cn/comments/20260527/18e7c8ada1fc4ed3a22f7eb423849e98/c.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u4f4e\u7a7a\u7ecf\u6d4e\u201c\u98de\u5165\u201d\u53bf\u57df", "url": "https://www.news.cn/fortune/20260521/82885377693a4fa1905d495fe2fdb567/c.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "AI\u667a\u80fd\u4f53\uff1a\u4e0d\u6b62\u804a\u5929\uff0c\u771f\u80fd\u5e72\u6d3b", "url": "https://www.news.cn/tech/20260526/fc9dfd9fff9b4651ba4aefe85ee116f5/c.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u7acb\u65b9\u7ea7\u7b97\u529b\u7a81\u7834\uff0c\u201c\u4e5d\u7ae0\u56db\u53f7\u201d\u8d70\u51fa\u91cf\u5b50\u8ba1\u7b97\u65b0\u8d5b\u9053", "url": "https://www.news.cn/tech/20260520/aad5a4585eea41b9ad1d7fac08601242/c.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u8bb0\u8005VR\u6c89\u6d78\u5f0f\u4f53\u9a8c\u201c\u822a\u5929\u9a7e\u9a76\u5458\u201d", "url": "https://www.news.cn/video/20260525/10b5374e4d3c44ee907969f6f0267f9a/c.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u56fd\u4ea7\u5927\u6a21\u578b\u4ece\u62fc\u514d\u8d39\u8f6c\u5411\u62fc\u4ef7\u503c", "url": "https://www.news.cn/tech/20260528/28805586af874ce6bba5beb3b68957b8/c.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u201c\u5e2e\u5b50\u5973\u5e26\u5a03\u53ef\u9886\u8865\u8d34\u201d\u662f\u4e1c\u62fc\u897f\u51d1\u7684\u201c\u4e09\u65e0\u653f\u7b56\u201d", "url": "http://www.news.cn/government/20260528/0e402a4b31844004896457d35ff77ea1/c.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u201c\u6210\u90fd\u8bd5\u70b9\u80b2\u513f\u8865\u8d34\u5ef6\u957f\u5230\u5b69\u5b506\u5c81\u201d\u4e0d\u5b9e", "url": "https://www.piyao.org.cn/20260527/9d1b5ac868c3414c814e2618963b34c6/c.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "2026\u5168\u56fd\u8111\u673a\u63a5\u53e3\u79d1\u6280\u4e0e\u4ea7\u4e1a\u878d\u5408\u521b\u65b0\u5927\u4f1a\u4e3e\u884c", "url": "https://www.news.cn/info/20260510/391a8e1f22554c11b3a62eeb962f8cfa/c.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "AI\u8d4b\u80fd\u5343\u884c\u767e\u4e1a\u4e00\u7ebf\u89c2\u5bdf\uff5cAI\u52a0\u901f\u843d\u5730\u7269\u4e1a\u670d\u52a1", "url": "https://www.news.cn/house/20260526/bb7fd155c7f64bff80321ceb0d2aae04/c.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u5149\u4f0f\u7ec4\u4ef6\u4e24\u9879\u5f3a\u5236\u6027\u56fd\u5bb6\u6807\u51c6\u53d1\u5e03", "url": "https://www.news.cn/energy/20260528/46be70c6d6f34a629fa3d35ae3aa7780/c.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u534e\u5c14\u8857\u89c1\u95fb", "summary": "\u91d1\u94bc\u80a1\u4efd\u80a1\u7968\u4ea4\u6613\u5f02\u5e38\u6ce2\u52a8\u516c\u544a\uff0c\u516c\u53f8\u76ee\u524d\u751f\u4ea7\u7ecf\u8425\u6b63\u5e38\u3002\u81ea2026\u5e74\u5e74\u521d\u4ee5\u6765\uff0c\u94bc\u5e02\u573a\u603b\u4f53\u5448\u4e0a\u6da8\u8fd0\u884c\u6001\u52bf\uff0c\u8fd1\u671f\u300aMW\u300b\u6c27\u5316\u94bc\u4ef7\u683c30.48\u7f8e\u5143/\u78c5\u94bc\uff0c\u8f83\u5e74\u521d\u4e0a\u6da834.3%\uff1b\u56fd\u5185\u94bc\u94c1\u4ef7\u683c31.4\u4e07\u5143/\u5428\uff0c\u8f83\u5e74\u521d\u4e0a\u6da825.1%\u3002\u516c\u53f8\u5173\u6ce8\u5230\u6709\u7f51\u7edc\u5a92\u4f53\u4f20\u64ad\u516c\u53f8\u662f\u56fd\u5185\u91cd\u8981\u82af\u7247\u751f\u4ea7\u5546\u6838\u5fc3\u6750\u6599\u4f9b\u5e94\u5546\u4ee5\u53ca\u7b7e\u8ba2\u76f8\u5173\u5927\u989d\u8ba2\u5355\u7b49\u4fe1\u606f\uff0c\u7ecf\u6838\u67e5\u4e3a\u4e0d\u5b9e\u4fe1\u606f\u3002", "title": "\u91d1\u94bc\u80a1\u4efd\uff1a\u516c\u53f8\u662f\u56fd\u5185\u91cd\u8981\u82af\u7247\u751f\u4ea7\u5546\u6838\u5fc3\u6750\u6599\u4f9b\u5e94\u5546\u4ee5\u53ca\u7b7e\u8ba2\u76f8\u5173\u5927\u989d\u8ba2\u5355\u7b49\u4e3a\u4e0d\u5b9e\u4fe1\u606f", "url": "https://wallstreetcn.com/livenews/3110660"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u534e\u5c14\u8857\u89c1\u95fb", "summary": "\u518d\u5347\u79d1\u6280\uff1a\u516c\u53f8\u81ea2020\u5e74\u8d77\u5411\u56fd\u9645\u67d0\u77e5\u540d\u822a\u5929\u516c\u53f8\u76f4\u63a5\u4f9b\u5e94\u201c\u9ad8\u7845\u6c27\u7ea4\u7ef4\u4ea7\u54c1\u201d\uff0c2025\u5e74\u8be5\u9879\u4ea7\u54c1\u4e1a\u52a1\u6536\u5165\u5360\u516c\u53f8\u603b\u8425\u6536\u6bd4\u4f8b\u6781\u4f4e\uff0c\u76ee\u524d\u201c\u9ad8\u7845\u6c27\u7ea4\u7ef4\u4ea7\u54c1\u201d\u6682\u65e0\u5728\u624b\u8ba2\u5355\u3002", "title": "\u518d\u5347\u79d1\u6280\uff1a\u516c\u53f8\u81ea2020\u5e74\u8d77\u5411\u56fd\u9645\u67d0\u77e5\u540d\u822a\u5929\u516c\u53f8\u76f4\u63a5\u4f9b\u5e94\u201c\u9ad8\u7845\u6c27\u7ea4\u7ef4\u4ea7\u54c1\u201d\uff0c2025\u5e74\u8be5\u9879\u4ea7\u54c1\u4e1a\u52a1\u6536\u5165\u5360\u516c\u53f8\u603b\u8425\u6536\u6bd4\u4f8b\u6781...", "url": "https://wallstreetcn.com/livenews/3110653"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u534e\u5c14\u8857\u89c1\u95fb", "summary": "\u82f1\u4f1f\u8fbe\u670d\u52a1\u5668\u7684\u6700\u5927\u5236\u9020\u5546\u4e4b\u4e00\u7eac\u9896\u79d1\u6280\u8b66\u544a\u79f0\uff0c\u9664\u4e86\u5185\u5b58\u82af\u7247\u4e4b\u5916\uff0c\u6570\u636e\u4e2d\u5fc3\u5173\u952e\u96f6\u90e8\u4ef6\u4e5f\u5f00\u59cb\u51fa\u73b0\u77ed\u7f3a\uff0c\u8fd9\u53ef\u80fd\u4f1a\u62d6\u6162\u5168\u7403AI\u57fa\u7840\u8bbe\u65bd\u5efa\u8bbe\u7684\u901f\u5ea6\uff0c\u6216\u63a8\u9ad8\u5176\u6210\u672c\u3002\u7eac\u9896\u8463\u4e8b\u957f\u6d2a\u4e3d\u5bd7\u9884\u8ba1\uff0c\u968f\u7740Meta Platforms Inc.\u548c\u5fae\u8f6f\u7b49\u516c\u53f8\u4e0d\u65ad\u52a0\u5927\u8d44\u672c\u652f\u51fa\uff0c\u672a\u6765\u4e09\u5230\u4e94\u5e74\u6570\u636e\u4e2d\u5fc3\u786c\u4ef6\u9700\u6c42\u4ecd\u5c06\u6301\u7eed\u706b\u70ed\u3002\u4f46\u4e89\u593a\u4ece\u5185\u5b58\u5230\u7f51\u7edc\u82af\u7247\u7b49\u5173\u952e\u7ec4\u4ef6\u7684\u7ade\u4e89\uff0c\u6b63\u5728\u628a\u786c\u4ef6\u4ef7\u683c\u63a8\u81f3\u7eaa\u5f55\u9ad8\u4f4d\u3002\u7531\u4e8e\u5404\u65b9\u90fd\u5728\u7ade\u76f8\u6269\u5145\u4ea7\u80fd\uff0c\u5f88\u96be\u51c6\u786e\u5224\u65ad\u4e0b\u4e00\u8f6e\u4f9b\u5e94\u7d27\u5f20\u4f1a\u51fa\u73b0\u5728\u54ea\u91cc\u3002\uff08\u5f6d\u535a\uff09", "title": "\u82f1\u4f1f\u8fbe\u670d\u52a1\u5668\u5236\u9020\u5546\u7eac\u9896\u9884\u8ba1AI\u9886\u57df\u7684\u4f9b\u5e94\u74f6\u9888\u5c06\u4e0d\u6b62\u4e8e\u5185\u5b58", "url": "https://wallstreetcn.com/livenews/3110628"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u534e\u5c14\u8857\u89c1\u95fb", "summary": "\u4eac\u4e1c\u8ba1\u5212\u672a\u67655\u5e74\u57f9\u517b10\u4e07\u540d\u5de5\u7a0b\u5e08\uff0c\u8986\u76d6\u673a\u5668\u4eba\u3001\u667a\u80fd\u5bb6\u5c45\u552e\u540e\u7ef4\u4fee\u7b49\u5404\u7c7b\u670d\u52a1\u3002\u4eac\u4e1c\u79f0\uff0c\u76ee\u524d\u5df2\u4e0e\u884c\u4e1a\u7edd\u5927\u591a\u6570\u5934\u90e8\u673a\u5668\u4eba\u4f01\u4e1a\u8fbe\u6210\u6df1\u5ea6\u5408\u4f5c\uff0c\u8fd1\u65e5\u8fd8\u4e0e\u56fd\u5185\u5934\u90e8\u673a\u5668\u4eba\u5e94\u7528\u5e73\u53f0\u8fbe\u6210\u6218\u7565\u5408\u4f5c\uff0c\u5171\u5efa\u673a\u5668\u4eba\u552e\u540e\u670d\u52a1\u4f53\u7cfb\u3002\uff08\u754c\u9762\u65b0\u95fb\uff09", "title": "\u4eac\u4e1c\uff1a\u672a\u67655\u5e74\u57f9\u517b10\u4e07\u540d\u5de5\u7a0b\u5e08", "url": "https://wallstreetcn.com/livenews/3110626"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u534e\u5c14\u8857\u89c1\u95fb", "summary": "\u4e2d\u5fc3\u901a\u8baf\u6da8\u7ea613%\uff0c\u667a\u8c31\u6da8\u7ea614%\uff0c\u5251\u6865\u79d1\u6280\u6da8\u7ea611%\uff0c\u534e\u8679\u534a\u5bfc\u4f53\u6da8\u7ea612%\uff0c\u5c0f\u9e4f\u96c6\u56e2\u6da8\u7ea66%\uff0c\u6ce1\u6ce1\u739b\u7279\u6da8\u7ea65%\u3002", "title": "\u6052\u751f\u6307\u6570\u6536\u76d8\u8dcc1.27%\uff0c\u6052\u751f\u79d1\u6280\u6307\u6570\u8dcc0.39%", "url": "https://wallstreetcn.com/livenews/3110592"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u534e\u5c14\u8857\u89c1\u95fb", "summary": "\u4f26\u6566\u91d1\u5c5e\u4ea4\u6613\u6240(LME)\uff1a\u950c\u5e93\u5b58\u51cf\u5c1175\u5428\uff0c\u94dc\u5e93\u5b58\u51cf\u5c112200\u5428\uff0c\u94dd\u5e93\u5b58\u51cf\u5c111250\u5428\uff0c\u9521\u5e93\u5b58\u589e\u52a0200\u5428\uff0c\u94c5\u5e93\u5b58\u589e\u52a029650\u5428\uff0c\u954d\u5e93\u5b58\u6301\u5e73\u3002", "title": "\u4f26\u6566\u91d1\u5c5e\u4ea4\u6613\u6240(LME)\uff1a\u950c\u5e93\u5b58\u51cf\u5c1175\u5428\uff0c\u94dc\u5e93\u5b58\u51cf\u5c112200\u5428\uff0c\u94dd\u5e93\u5b58\u51cf\u5c111250\u5428\uff0c\u9521\u5e93\u5b58\u589e\u52a0200\u5428\uff0c\u94c5\u5e93\u5b58\u589e\u52a02...", "url": "https://wallstreetcn.com/livenews/3110585"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "\u6600\u51a2\u79d1\u6280\uff1a\u76ee\u524d\u516c\u53f8MLCC\u4ea7\u54c1\u4e3b\u8981\u5e94\u7528\u4e8e\u6d88\u8d39\u7535\u5b50\u9886\u57df\uff0c\u6682\u672a\u5e94\u7528\u4e8eAI\u7b97\u529b\u670d\u52a1\u5668", "url": "https://www.yicai.com/news/103205704.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "\u91d1\u94bc\u80a1\u4efd\uff1a\u7f51\u4f20\u516c\u53f8\u662f\u56fd\u5185\u91cd\u8981\u82af\u7247\u751f\u4ea7\u5546\u6838\u5fc3\u6750\u6599\u4f9b\u5e94\u5546\u4ee5\u53ca\u7b7e\u8ba2\u76f8\u5173\u5927\u989d\u8ba2\u5355\u7b49\u4e3a\u4e0d\u5b9e\u4fe1\u606f", "url": "https://www.yicai.com/news/103205697.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "\u4e2d\u4e13\u5c0f\u4f19AI\u77ed\u7247\u706b\u5230\u597d\u83b1\u575e \u201c\u6caa\u4e5d\u6761\u201d\u6253\u7834\u5b66\u5386\u95e8\u69db \u6709\u624d\u534e\u5c31\u80fd\u5728\u4e0a\u6d77\u5b89\u5bb6\u8ffd\u68a6", "url": "https://www.yicai.com/video/103205683.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "\u5929\u6d25\uff1a\u79ef\u6781\u63a8\u52a8\u672c\u5e02\u533b\u7597\u673a\u6784\u3001\u79d1\u7814\u9662\u6240\u7b49\u91c7\u8d2d\u8111\u673a\u63a5\u53e3\u4eea\u5668\u8bbe\u5907", "url": "https://www.yicai.com/news/103205667.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "\u5929\u6d25\uff1a\u652f\u6301\u5546\u4e1a\u94f6\u884c\u9488\u5bf9\u8111\u673a\u63a5\u53e3\u4ea7\u4e1a\u7279\u70b9\u521b\u65b0\u4fe1\u8d37\u4ea7\u54c1\u548c\u670d\u52a1\u6a21\u5f0f", "url": "https://www.yicai.com/news/103205663.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "\u771f\u8bda\u6c38\u8fdc\u662f\u5fc5\u6740\u6280\uff01AI\u53ef\u4ee5\u5929\u9a6c\u884c\u7a7a \u4f46\u4f7f\u7528AI\u7684\u4eba\u5fc5\u987b\u811a\u8e0f\u5b9e\u5730", "url": "https://www.yicai.com/video/103205661.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "\u4f4e\u8d28\u91cf\u7684AI\u4f5c\u54c1\u5145\u65a5\u5e02\u573a\uff0cAI\u5c31\u4f1a\u8ddf\u201c\u5783\u573e \u5077\u61d2\u201d\u753b\u7b49\u53f7\uff0c\u89c2\u4f17\u5c31\u65e0\u6cd5\u771f\u6b63\u8ba4\u540cAI", "url": "https://www.yicai.com/video/103205658.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "13\u5c81AI\u539f\u4f4f\u6c11\uff1a\u4e00\u76f4\u95ee\u8001\u5e08\u4f1a\u4e0d\u597d\u610f\u601d \u4f46AI\u6c38\u8fdc\u4e0d\u4f1a\u5acc\u6211\u70e6 \u8fd9\u662f\u6211\u4eec\u8fd9\u4ee3\u4eba\u72ec\u4eab\u7684\u5962\u4f88", "url": "https://www.yicai.com/video/103205654.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "\u5929\u6d25\uff1a\u52302030\u5e74\u5f62\u6210\u603b\u89c4\u6a21\u8d85100\u4ebf\u5143\u7684\u8111\u673a\u63a5\u53e3\u4ea7\u4e1a\u57fa\u91d1\u7fa4", "url": "https://www.yicai.com/news/103205656.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "\u5de5\u4fe1\u90e8\uff1a\u7528\u597d\u201c\u5b58\u91cf\u201d\u653f\u7b56\uff0c\u50a8\u5907\u201c\u589e\u91cf\u201d\u653f\u7b56\uff0c\u575a\u6301\u7528\u6cd5\u6cbb\u5316\u624b\u6bb5\u89c4\u8303\u65b0\u80fd\u6e90\u6c7d\u8f66\u52a8\u529b\u7535\u6c60\u56de\u6536\u5229\u7528", "url": "https://www.yicai.com/news/103205641.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "\u4ece\u5199\u5267\u672c\u5230\u526a\u8f91\u5ba1\u6838 AI\u65f6\u4ee3\u5185\u5bb9\u521b\u4f5c\u8005\u53ef\u4ee5\u4e00\u4eba\u6210\u519b", "url": "https://www.yicai.com/video/103205624.html"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u4eca\u65e5\u5934\u6761", "summary": "\u5934\u6761\u70ed\u699c\u70ed\u5ea6 4579620", "title": "\u822a\u5929\u5458\u8981\u56de\u5bb6\u7684\u5feb\u4e50\u5168\u5199\u8138\u4e0a\u4e86", "url": "https://www.toutiao.com/trending/7643967998655037481/?category_name=topic_innerflow\u0026event_type=hot_board\u0026log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%224%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227643967998655037481%22%2C%22hot_board_impr_id%22%3A%222026052818252712B8EFE0045365518135%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%88%AA%E5%A4%A9%E5%91%98%E8%A6%81%E5%9B%9E%E5%AE%B6%E7%9A%84%E5%BF%AB%E4%B9%90%E5%85%A8%E5%86%99%E8%84%B8%E4%B8%8A%E4%BA%86%22%7D\u0026rank=\u0026style_id=40132\u0026topic_id=7643967998655037481"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u4eca\u65e5\u5934\u6761", "summary": "\u5934\u6761\u70ed\u699c\u70ed\u5ea6 1524423", "title": "\u4f55\u5c0f\u9e4f\u79f0L4\u81ea\u52a8\u9a7e\u9a76\u6709\u671b\u4e24\u5e74\u5185\u5b9e\u73b0", "url": "https://www.toutiao.com/trending/7644726971875885065/?category_name=topic_innerflow\u0026event_type=hot_board\u0026log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227644726971875885065%22%2C%22hot_board_impr_id%22%3A%222026052818252712B8EFE0045365518135%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BD%95%E5%B0%8F%E9%B9%8F%E7%A7%B0L4%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E6%9C%89%E6%9C%9B%E4%B8%A4%E5%B9%B4%E5%86%85%E5%AE%9E%E7%8E%B0%22%7D\u0026rank=\u0026style_id=40132\u0026topic_id=7644726971875885065"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u4eca\u65e5\u5934\u6761", "summary": "\u5934\u6761\u70ed\u699c\u70ed\u5ea6 619784", "title": "\u63d0\u524d\u542f\u52a8\u7a00\u571f\u51fa\u53e3\u7ba1\u5236\uff1f\u5916\u4ea4\u90e8\u56de\u5e94", "url": "https://www.toutiao.com/trending/7644177291053301823/?category_name=topic_innerflow\u0026event_type=hot_board\u0026log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227644177291053301823%22%2C%22hot_board_impr_id%22%3A%222026052818252712B8EFE0045365518135%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%8F%90%E5%89%8D%E5%90%AF%E5%8A%A8%E7%A8%80%E5%9C%9F%E5%87%BA%E5%8F%A3%E7%AE%A1%E5%88%B6%EF%BC%9F%E5%A4%96%E4%BA%A4%E9%83%A8%E5%9B%9E%E5%BA%94%22%7D\u0026rank=\u0026style_id=40132\u0026topic_id=7644177291053301823"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u4eca\u65e5\u5934\u6761", "summary": "\u5934\u6761\u70ed\u699c\u70ed\u5ea6 340144", "title": "\u822a\u5929\u5458\u6b66\u98de\u5373\u5c06\u56de\u5bb6", "url": "https://www.toutiao.com/trending/7644779118072528946/?category_name=topic_innerflow\u0026event_type=hot_board\u0026log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%228%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227644779118072528946%22%2C%22hot_board_impr_id%22%3A%222026052818252712B8EFE0045365518135%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%88%AA%E5%A4%A9%E5%91%98%E6%AD%A6%E9%A3%9E%E5%8D%B3%E5%B0%86%E5%9B%9E%E5%AE%B6%22%7D\u0026rank=\u0026style_id=40132\u0026topic_id=7644779118072528946"}, {"category": "\u884c\u4e1a\u52a8\u6001", "content": "", "source": "\u54d4\u54e9\u54d4\u54e9\u70ed\u641c", "summary": "\u70ed\u641c\u70ed\u5ea6 1833946", "title": "AI\u6539\u5199\u9ed1\u888d\u7ea0\u5bdf\u961f\u7ed3\u5c40", "url": "https://search.bilibili.com/all?keyword=AI%E6%94%B9%E5%86%99%E9%BB%91%E8%A2%8D%E7%BA%A0%E5%AF%9F%E9%98%9F%E7%BB%93%E5%B1%80"}]}, "overall": "\u4eca\u65e5\u6295\u8d44\u8005\u6700\u9700\u8981\u5173\u6ce8\u7684\u662f\uff1a\u4e2d\u585e\u592e\u884c\u6269\u5927\u672c\u5e01\u4e92\u6362\u534f\u8bae\u53ca\u4fc4\u7f57\u65af\u4eba\u6c11\u5e01\u4e3b\u6743\u503a\u6307\u5f15\uff0c\u5229\u597d\u8de8\u5883\u652f\u4ed8\u4e0e\u4eba\u6c11\u5e01\u56fd\u9645\u5316\uff0c\u5173\u6ce8\u4e2d\u6cb9\u8d44\u672c\u3001\u4e2d\u56fd\u4ea4\u5efa\u3002\u82f1\u56fd\u592e\u884c\u8b66\u544a\u5bf9\u51b2\u57fa\u91d1\u52a0\u5267\u56fd\u503a\u6ce2\u52a8\uff0c\u5168\u7403\u907f\u9669\u60c5\u7eea\u5347\u6e29\uff0c\u77ed\u671f\u5229\u7a7a\u98ce\u9669\u504f\u597d\uff0c\u5229\u597d\u9ec4\u91d1ETF\uff08518880\uff09\u53ca\u9ad8\u80a1\u606f\u9632\u5fa1\u677f\u5757\u5982\u957f\u6c5f\u7535\u529b\u3002\u5149\u4f0f\u4e24\u9879\u5f3a\u5236\u6027\u56fd\u6807\u53d1\u5e03\uff0c\u63d0\u5347\u884c\u4e1a\u51c6\u5165\u95e8\u69db\uff0c\u5229\u597d\u9686\u57fa\u7eff\u80fd\u3001\u901a\u5a01\u80a1\u4efd\u7b49\u9f99\u5934\u3002\u201c\u4e5d\u7ae0\u56db\u53f7\u201d\u91cf\u5b50\u8ba1\u7b97\u7a81\u7834\u53caAI\u667a\u80fd\u4f53\u8f6c\u5411\u5b9e\u9645\u5e94\u7528\uff0c\u5229\u597d\u56fd\u76fe\u91cf\u5b50\u3001\u79d1\u5927\u8baf\u98de\uff1b\u4f4e\u7a7a\u7ecf\u6d4e\u5411\u53bf\u57df\u6e17\u900f\uff0c\u5229\u597d\u4e2d\u822a\u9ad8\u79d1\u3002\u91d1\u94bc\u80a1\u4efd\u6f84\u6e05\u82af\u7247\u6750\u6599\u4f20\u95fb\uff0c\u4f46\u94bc\u4ef7\u5e74\u5185\u6da8\u8d8525%\uff0c\u5b9e\u9645\u5229\u597d\u94bc\u4e1a\u9f99\u5934\u3002", "summaries": {"\u5b8f\u89c2\u653f\u7b56": "\u3010\u5b8f\u89c2\u653f\u7b56\u3011\u4e2d\u585e\u592e\u884c\u6269\u5927\u672c\u5e01\u4e92\u6362\u534f\u8bae\u81f350\u4ebf\u5143\uff0c\u6df1\u5316\u8d27\u5e01\u91d1\u878d\u5408\u4f5c\uff0c\u5229\u597d\u8de8\u5883\u652f\u4ed8\u3001\u4eba\u6c11\u5e01\u56fd\u9645\u5316\u76f8\u5173\u6807\u7684\uff08\u5982\u4e2d\u6cb9\u8d44\u672c\u3001\u5c0f\u5546\u54c1\u57ce\uff09\u3002\n\n\u3010\u56fd\u9645\u5c40\u52bf\u3011\u4fc4\u7f57\u65af\u4eba\u6c11\u5e01\u4e3b\u6743\u503a\u7968\u9762\u5229\u7387\u6307\u5f15\u4e0d\u9ad8\u4e8e7.75%\uff0c\u663e\u793a\u4e2d\u4fc4\u91d1\u878d\u5408\u4f5c\u6df1\u5316\uff0c\u5229\u597d\u4eba\u6c11\u5e01\u8de8\u5883\u7ed3\u7b97\u53ca\u4e00\u5e26\u4e00\u8def\u6982\u5ff5\uff08\u5982\u4e2d\u56fd\u4ea4\u5efa\u3001\u5317\u65b9\u56fd\u9645\uff09\u3002\n\n\u3010\u5e02\u573a\u60c5\u7eea\u3011\u82f1\u56fd\u592e\u884c\u8b66\u544a\u5bf9\u51b2\u57fa\u91d1\u52a0\u5267\u56fd\u503a\u6ce2\u52a8\uff0c\u5168\u7403\u907f\u9669\u60c5\u7eea\u6216\u5347\u6e29\uff0c\u77ed\u671f\u5229\u7a7a\u98ce\u9669\u504f\u597d\uff0c\u5229\u597d\u9ec4\u91d1ETF\uff08518880\uff09\u53ca\u9ad8\u80a1\u606f\u9632\u5fa1\u677f\u5757\uff08\u5982\u957f\u6c5f\u7535\u529b\uff09\u3002", "\u884c\u4e1a\u52a8\u6001": "\u3010\u5b8f\u89c2\u653f\u7b56\u3011\u5149\u4f0f\u7ec4\u4ef6\u4e24\u9879\u5f3a\u5236\u6027\u56fd\u6807\u53d1\u5e03\uff0c\u5229\u597d\u5149\u4f0f\u9f99\u5934\u9686\u57fa\u7eff\u80fd\u3001\u901a\u5a01\u80a1\u4efd\uff0c\u884c\u4e1a\u51c6\u5165\u95e8\u69db\u63d0\u5347\u52a0\u901f\u4f18\u80dc\u52a3\u6c70\u3002\n\n\u3010\u884c\u4e1a\u52a8\u6001\u3011\u201c\u4e5d\u7ae0\u56db\u53f7\u201d\u91cf\u5b50\u8ba1\u7b97\u7a81\u7834\uff0c\u5229\u597d\u56fd\u76fe\u91cf\u5b50\u3001\u79d1\u5927\u56fd\u521b\uff1bAI\u667a\u80fd\u4f53\u4ece\u804a\u5929\u8f6c\u5411\u5b9e\u9645\u5e94\u7528\uff0c\u5229\u597d\u79d1\u5927\u8baf\u98de\u3001\u62d3\u5c14\u601d\uff1b\u4f4e\u7a7a\u7ecf\u6d4e\u5411\u53bf\u57df\u6e17\u900f\uff0c\u5229\u597d\u4e2d\u822a\u9ad8\u79d1\u3001\u7eb5\u6a2a\u80a1\u4efd\u3002\n\n\u3010\u516c\u53f8\u57fa\u672c\u9762\u3011\u91d1\u94bc\u80a1\u4efd\u6f84\u6e05\u82af\u7247\u6750\u6599\u4f20\u95fb\uff0c\u4f46\u94bc\u4ef7\u5e74\u5185\u6da8\u8d8525%\uff0c\u5b9e\u9645\u5229\u597d\u94bc\u4e1a\u9f99\u5934\uff1b\u518d\u5347\u79d1\u6280\u822a\u5929\u4e1a\u52a1\u6536\u5165\u6781\u4f4e\u4e14\u65e0\u5728\u624b\u8ba2\u5355\uff0c\u77ed\u671f\u65e0\u5b9e\u8d28\u5f71\u54cd\u3002\n\n\u3010\u5e02\u573a\u60c5\u7eea\u3011\u56fd\u4ea7\u5927\u6a21\u578b\u4ece\u514d\u8d39\u8f6c\u5411\u4ef7\u503c\u7ade\u4e89\uff0c\u5e02\u573a\u98ce\u9669\u504f\u597d\u4e2d\u6027\u504f\u8c28\u614e\uff0c\u5173\u6ce8AI\u5e94\u7528\u843d\u5730\u6807\u7684\u3002\n\n\u3010\u56fd\u9645\u5c40\u52bf\u3011\u65e0\u76f4\u63a5\u5f71\u54cd\u3002"}, "total": 50};
+    const data = {"category_json": "{\"\u79d1\u6280\": 44, \"\u80fd\u6e90\": 3, \"\u8d44\u6e90\": 3}", "generated_at": "2026-05-28 10:36:53", "groups": {"\u79d1\u6280": [{"category": "\u79d1\u6280", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u4e2d\u56fd\u4e92\u8054\u7f51\u8054\u5408\u8f9f\u8c23\u5e73\u53f0", "url": "https://www.piyao.org.cn/"}, {"category": "\u79d1\u6280", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u795e\u821f\u4e8c\u5341\u4e00\u53f7\u548c\u795e\u821f\u4e8c\u5341\u4e09\u53f7\u822a\u5929\u5458\u4e58\u7ec4\u5b8c\u6210\u5728\u8f68\u4ea4\u63a5", "url": "https://www.news.cn/tech/20260528/fe877d159f684cea9aa1e2ce1822c9ec/c.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u70ed\u70b9\u8ffd\u8e2a\u4e28\u201c\u97ec\uff08\u03c4\uff09\u5b9a\u5f8b\u201d\u5c06\u5982\u4f55\u5f71\u54cd\u82af\u7247\u4ea7\u4e1a\uff1f", "url": "https://www.news.cn/video/20260528/575d66e2ccb7402ea29f0b3053979953/c.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u65b0\u534e\u7f51\u79d1\u666e\u4e28\u91cf\u5b50\u4e0d\u795e\u79d8\uff1a\u96f6\u57fa\u7840\u5e26\u4f60\u89e3\u9501\u5fae\u89c2\u9ad8\u79d1\u6280", "url": "https://www.news.cn/tech/20260528/ff31ef51c0014e378c96496c0edbfa6c/c.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u63a2\u77ed\u5267\u5de5\u5382\uff0c\u770bAI\u5982\u4f55\u91cd\u5851\u5fae\u77ed\u5267\u751f\u4ea7\u94fe", "url": "https://www.news.cn/fortune/20260528/4e6af91bc00c4ef59a3ca290fb351114/c.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u4e92\u8054\u7f51\u4f01\u4e1a\u4e91\u7aef\u62db\u8058\u6708\u6d3b\u52a8\u5c06\u4e8e6\u6708\u5f00\u5c55", "url": "https://education.news.cn/20260528/658fa2087e104054a0b84c0b4941cbdc/c.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u6bd5\u4e1a\u8bba\u6587\u5ba1\u6838\uff0c\u4e0d\u80fd\u8fc7\u5ea6\u4f9d\u8d56AI", "url": "https://www.news.cn/comments/20260527/18e7c8ada1fc4ed3a22f7eb423849e98/c.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "AI\u667a\u80fd\u4f53\uff1a\u4e0d\u6b62\u804a\u5929\uff0c\u771f\u80fd\u5e72\u6d3b", "url": "https://www.news.cn/tech/20260526/fc9dfd9fff9b4651ba4aefe85ee116f5/c.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u7acb\u65b9\u7ea7\u7b97\u529b\u7a81\u7834\uff0c\u201c\u4e5d\u7ae0\u56db\u53f7\u201d\u8d70\u51fa\u91cf\u5b50\u8ba1\u7b97\u65b0\u8d5b\u9053", "url": "https://www.news.cn/tech/20260520/aad5a4585eea41b9ad1d7fac08601242/c.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u8bb0\u8005VR\u6c89\u6d78\u5f0f\u4f53\u9a8c\u201c\u822a\u5929\u9a7e\u9a76\u5458\u201d", "url": "https://www.news.cn/video/20260525/10b5374e4d3c44ee907969f6f0267f9a/c.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u56fd\u4ea7\u5927\u6a21\u578b\u4ece\u62fc\u514d\u8d39\u8f6c\u5411\u62fc\u4ef7\u503c", "url": "https://www.news.cn/tech/20260528/28805586af874ce6bba5beb3b68957b8/c.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u201c\u5341\u4e94\u4e94\u201d\u671f\u95f4\u6cd5\u9662\u5c06\u5b8c\u5584AI\u751f\u6210\u7269\u7b49\u65b9\u9762\u88c1\u5224\u89c4\u5219", "url": "https://www.news.cn/tech/20260528/d8479046e42d4b80be324604bda5aa78/c.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u667a\u8d62\u672a\u6765\u30fb\u5408\u89c4\u81f4\u8fdc\u2014\u2014\u65b0\u534eGEO\u667a\u80fd\u4f53\u5e73\u53f0\u53d1\u5e03\u4f1a\u5728\u4eac\u4e3e\u884c", "url": "http://www.news.cn/digital/20260510/bbe1c58d1a1c407abf806e20f1c38985/c.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "2026\u5168\u56fd\u8111\u673a\u63a5\u53e3\u79d1\u6280\u4e0e\u4ea7\u4e1a\u878d\u5408\u521b\u65b0\u5927\u4f1a\u4e3e\u884c", "url": "https://www.news.cn/info/20260510/391a8e1f22554c11b3a62eeb962f8cfa/c.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "AI\u8d4b\u80fd\u5343\u884c\u767e\u4e1a\u4e00\u7ebf\u89c2\u5bdf\uff5cAI\u52a0\u901f\u843d\u5730\u7269\u4e1a\u670d\u52a1", "url": "https://www.news.cn/house/20260526/bb7fd155c7f64bff80321ceb0d2aae04/c.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u6211\u79d1\u5b66\u5bb6\u7834\u89e3\u7518\u8517\u589e\u7cd6\u5173\u952e\u57fa\u56e0 \u5df2\u5e94\u7528\u4e8e\u6307\u5bfc\u80b2\u79cd", "url": "https://www.news.cn/20260528/d32aa1c2c5d940359116fac5124f1f75/c.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u4e2d\u56fd\u4e92\u8054\u7f51\u8054\u5408\u8f9f\u8c23\u5e73\u53f0", "url": "http://www.piyao.org.cn/"}, {"category": "\u79d1\u6280", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u56fd\u5bb6\u4e92\u8054\u7f51\u4fe1\u606f\u529e\u516c\u5ba4", "url": "http://www.cac.gov.cn"}, {"category": "\u79d1\u6280", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u4e92\u8054\u7f51\u65b0\u95fb\u4fe1\u606f\u8bb8\u53ef\u8bc110120170002", "url": "http://www.news.cn//www.news.cn/downloads/20240104/certificates/certificate-01.jpg"}, {"category": "\u79d1\u6280", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u4e2d\u56fd\u4e92\u8054\u7f51\u89c6\u542c\u8282\u76ee\u670d\u52a1\u81ea\u5f8b\u516c\u7ea6", "url": "http://www.news.cn/newscenter/2008-02/22/content_7647209_1.htm"}, {"category": "\u79d1\u6280", "content": "", "source": "\u534e\u5c14\u8857\u89c1\u95fb", "summary": "\u8bb0\u8005\u4eca\u5929\u4e86\u89e3\u5230\uff0c\u5e02\u573a\u76d1\u7ba1\u603b\u5c40\u3001\u56fd\u5bb6\u53d1\u5c55\u6539\u9769\u59d4\u8054\u5408\u5370\u53d1\u300a\u4eba\u5de5\u667a\u80fd\u8ba1\u91cf\u4f53\u7cfb\u548c\u80fd\u529b\u5efa\u8bbe\u6307\u5f15\uff082026\u7248\uff09\u300b\uff0c\u7cfb\u7edf\u5e03\u5c40\u4eba\u5de5\u667a\u80fd\u8ba1\u91cf\u80fd\u529b\u5efa\u8bbe\u3002\n\n\u300a\u6307\u5f15\u300b\u56f4\u7ed5\u57fa\u7840\u652f\u6491\u3001\u901a\u7528\u6280\u672f\u3001\u6838\u5fc3\u6280\u672f\u3001\u8ba1\u91cf\u6280\u672f\u89c4\u8303\u3001\u8ba1\u91cf\u670d\u52a1\u4ea7\u4e1a\u3001\u667a\u80fd\u8d4b\u80fd\u8ba1\u91cf\u7b49\u516d\u5927\u90e8\u5206\u7cfb\u7edf\u5e03\u5c40\uff0c\u6253\u901a\u5b9e\u9a8c\u5ba4\u521b\u65b0\u4e0e\u884c\u4e1a\u5e94\u7528\u201c\u6700\u540e\u4e00\u516c\u91cc\u201d\u3002", "title": "\u4e24\u90e8\u95e8\u8054\u624b \u7cfb\u7edf\u5e03\u5c40\u4eba\u5de5\u667a\u80fd\u8ba1\u91cf\u80fd\u529b\u5efa\u8bbe", "url": "https://wallstreetcn.com/livenews/3110675"}, {"category": "\u79d1\u6280", "content": "", "source": "\u534e\u5c14\u8857\u89c1\u95fb", "summary": "\u91d1\u94bc\u80a1\u4efd\u80a1\u7968\u4ea4\u6613\u5f02\u5e38\u6ce2\u52a8\u516c\u544a\uff0c\u516c\u53f8\u76ee\u524d\u751f\u4ea7\u7ecf\u8425\u6b63\u5e38\u3002\u81ea2026\u5e74\u5e74\u521d\u4ee5\u6765\uff0c\u94bc\u5e02\u573a\u603b\u4f53\u5448\u4e0a\u6da8\u8fd0\u884c\u6001\u52bf\uff0c\u8fd1\u671f\u300aMW\u300b\u6c27\u5316\u94bc\u4ef7\u683c30.48\u7f8e\u5143/\u78c5\u94bc\uff0c\u8f83\u5e74\u521d\u4e0a\u6da834.3%\uff1b\u56fd\u5185\u94bc\u94c1\u4ef7\u683c31.4\u4e07\u5143/\u5428\uff0c\u8f83\u5e74\u521d\u4e0a\u6da825.1%\u3002\u516c\u53f8\u5173\u6ce8\u5230\u6709\u7f51\u7edc\u5a92\u4f53\u4f20\u64ad\u516c\u53f8\u662f\u56fd\u5185\u91cd\u8981\u82af\u7247\u751f\u4ea7\u5546\u6838\u5fc3\u6750\u6599\u4f9b\u5e94\u5546\u4ee5\u53ca\u7b7e\u8ba2\u76f8\u5173\u5927\u989d\u8ba2\u5355\u7b49\u4fe1\u606f\uff0c\u7ecf\u6838\u67e5\u4e3a\u4e0d\u5b9e\u4fe1\u606f\u3002", "title": "\u91d1\u94bc\u80a1\u4efd\uff1a\u516c\u53f8\u662f\u56fd\u5185\u91cd\u8981\u82af\u7247\u751f\u4ea7\u5546\u6838\u5fc3\u6750\u6599\u4f9b\u5e94\u5546\u4ee5\u53ca\u7b7e\u8ba2\u76f8\u5173\u5927\u989d\u8ba2\u5355\u7b49\u4e3a\u4e0d\u5b9e\u4fe1\u606f", "url": "https://wallstreetcn.com/livenews/3110660"}, {"category": "\u79d1\u6280", "content": "", "source": "\u534e\u5c14\u8857\u89c1\u95fb", "summary": "\u518d\u5347\u79d1\u6280\uff1a\u516c\u53f8\u81ea2020\u5e74\u8d77\u5411\u56fd\u9645\u67d0\u77e5\u540d\u822a\u5929\u516c\u53f8\u76f4\u63a5\u4f9b\u5e94\u201c\u9ad8\u7845\u6c27\u7ea4\u7ef4\u4ea7\u54c1\u201d\uff0c2025\u5e74\u8be5\u9879\u4ea7\u54c1\u4e1a\u52a1\u6536\u5165\u5360\u516c\u53f8\u603b\u8425\u6536\u6bd4\u4f8b\u6781\u4f4e\uff0c\u76ee\u524d\u201c\u9ad8\u7845\u6c27\u7ea4\u7ef4\u4ea7\u54c1\u201d\u6682\u65e0\u5728\u624b\u8ba2\u5355\u3002", "title": "\u518d\u5347\u79d1\u6280\uff1a\u516c\u53f8\u81ea2020\u5e74\u8d77\u5411\u56fd\u9645\u67d0\u77e5\u540d\u822a\u5929\u516c\u53f8\u76f4\u63a5\u4f9b\u5e94\u201c\u9ad8\u7845\u6c27\u7ea4\u7ef4\u4ea7\u54c1\u201d\uff0c2025\u5e74\u8be5\u9879\u4ea7\u54c1\u4e1a\u52a1\u6536\u5165\u5360\u516c\u53f8\u603b\u8425\u6536\u6bd4\u4f8b\u6781...", "url": "https://wallstreetcn.com/livenews/3110653"}, {"category": "\u79d1\u6280", "content": "", "source": "\u534e\u5c14\u8857\u89c1\u95fb", "summary": "\u636e\u9999\u6e2f\u4ea4\u6613\u6240\u62ab\u9732\uff0c\u56fd\u5bb6\u96c6\u6210\u7535\u8def\u57fa\u91d1\u5bf9\u4e2d\u82af\u56fd\u9645\u96c6\u6210\u7535\u8def\u5236\u9020\u6709\u9650\u516c\u53f8\u7684\u591a\u5934\u6301\u4ed3\u6bd4\u4f8b\u4e8e2026\u5e745\u670826\u65e5\u4ece8.08%\u964d\u81f37.99%\u3002", "title": "\u56fd\u5bb6\u96c6\u6210\u7535\u8def\u57fa\u91d1\u5bf9\u4e2d\u82af\u56fd\u9645\u7684\u591a\u5934\u6301\u4ed3\u6bd4\u4f8b\u964d\u81f37.99%", "url": "https://wallstreetcn.com/livenews/3110642"}, {"category": "\u79d1\u6280", "content": "", "source": "\u534e\u5c14\u8857\u89c1\u95fb", "summary": "\u82f1\u4f1f\u8fbe\u670d\u52a1\u5668\u7684\u6700\u5927\u5236\u9020\u5546\u4e4b\u4e00\u7eac\u9896\u79d1\u6280\u8b66\u544a\u79f0\uff0c\u9664\u4e86\u5185\u5b58\u82af\u7247\u4e4b\u5916\uff0c\u6570\u636e\u4e2d\u5fc3\u5173\u952e\u96f6\u90e8\u4ef6\u4e5f\u5f00\u59cb\u51fa\u73b0\u77ed\u7f3a\uff0c\u8fd9\u53ef\u80fd\u4f1a\u62d6\u6162\u5168\u7403AI\u57fa\u7840\u8bbe\u65bd\u5efa\u8bbe\u7684\u901f\u5ea6\uff0c\u6216\u63a8\u9ad8\u5176\u6210\u672c\u3002\u7eac\u9896\u8463\u4e8b\u957f\u6d2a\u4e3d\u5bd7\u9884\u8ba1\uff0c\u968f\u7740Meta Platforms Inc.\u548c\u5fae\u8f6f\u7b49\u516c\u53f8\u4e0d\u65ad\u52a0\u5927\u8d44\u672c\u652f\u51fa\uff0c\u672a\u6765\u4e09\u5230\u4e94\u5e74\u6570\u636e\u4e2d\u5fc3\u786c\u4ef6\u9700\u6c42\u4ecd\u5c06\u6301\u7eed\u706b\u70ed\u3002\u4f46\u4e89\u593a\u4ece\u5185\u5b58\u5230\u7f51\u7edc\u82af\u7247\u7b49\u5173\u952e\u7ec4\u4ef6\u7684\u7ade\u4e89\uff0c\u6b63\u5728\u628a\u786c\u4ef6\u4ef7\u683c\u63a8\u81f3\u7eaa\u5f55\u9ad8\u4f4d\u3002\u7531\u4e8e\u5404\u65b9\u90fd\u5728\u7ade\u76f8\u6269\u5145\u4ea7\u80fd\uff0c\u5f88\u96be\u51c6\u786e\u5224\u65ad\u4e0b\u4e00\u8f6e\u4f9b\u5e94\u7d27\u5f20\u4f1a\u51fa\u73b0\u5728\u54ea\u91cc\u3002\uff08\u5f6d\u535a\uff09", "title": "\u82f1\u4f1f\u8fbe\u670d\u52a1\u5668\u5236\u9020\u5546\u7eac\u9896\u9884\u8ba1AI\u9886\u57df\u7684\u4f9b\u5e94\u74f6\u9888\u5c06\u4e0d\u6b62\u4e8e\u5185\u5b58", "url": "https://wallstreetcn.com/livenews/3110628"}, {"category": "\u79d1\u6280", "content": "", "source": "\u534e\u5c14\u8857\u89c1\u95fb", "summary": "\u4eac\u4e1c\u8ba1\u5212\u672a\u67655\u5e74\u57f9\u517b10\u4e07\u540d\u5de5\u7a0b\u5e08\uff0c\u8986\u76d6\u673a\u5668\u4eba\u3001\u667a\u80fd\u5bb6\u5c45\u552e\u540e\u7ef4\u4fee\u7b49\u5404\u7c7b\u670d\u52a1\u3002\u4eac\u4e1c\u79f0\uff0c\u76ee\u524d\u5df2\u4e0e\u884c\u4e1a\u7edd\u5927\u591a\u6570\u5934\u90e8\u673a\u5668\u4eba\u4f01\u4e1a\u8fbe\u6210\u6df1\u5ea6\u5408\u4f5c\uff0c\u8fd1\u65e5\u8fd8\u4e0e\u56fd\u5185\u5934\u90e8\u673a\u5668\u4eba\u5e94\u7528\u5e73\u53f0\u8fbe\u6210\u6218\u7565\u5408\u4f5c\uff0c\u5171\u5efa\u673a\u5668\u4eba\u552e\u540e\u670d\u52a1\u4f53\u7cfb\u3002\uff08\u754c\u9762\u65b0\u95fb\uff09", "title": "\u4eac\u4e1c\uff1a\u672a\u67655\u5e74\u57f9\u517b10\u4e07\u540d\u5de5\u7a0b\u5e08", "url": "https://wallstreetcn.com/livenews/3110626"}, {"category": "\u79d1\u6280", "content": "", "source": "\u534e\u5c14\u8857\u89c1\u95fb", "summary": "\u793c\u6765\u516c\u53f8\u805a\u71262\u578b\u7cd6\u5c3f\u75c5\u786e\u8bca\u65e9\u671f\u9636\u6bb5\u7684\u7814\u7a76\u2014\u2014SURPASS-EARLY\u8be6\u7ec6\u7ed3\u679c\u5df2\u53d1\u8868\u3002\u8be5\u7814\u7a76\u663e\u793a\uff0c\u5728\u4e3a\u671f\u4e24\u5e74\u7684\u968f\u8bbf\u4e2d\uff0c\u76f8\u8f83\u4e8e\u5e38\u89c4\u5f3a\u5316\u6cbb\u7597\u65b9\u6848\uff0c\u63a5\u53d7\u66ff\u5c14\u6cca\u80bd\u6cbb\u7597\u7684\u60a3\u8005\u8840\u7cd6\u6539\u5584\u5e45\u5ea6\u66f4\u5927\uff0c60%\u7684\u60a3\u8005\u5b9e\u73b0\u6b63\u5e38\u8840\u7cd6\u6c34\u5e73\uff0c\u800c\u5e38\u89c4\u5f3a\u5316\u6cbb\u7597\u7ec4\u7684\u6bd4\u4f8b\u4e3a24%\u3002\u9664\u8840\u7cd6\u63a7\u5236\u5916\uff0c\u66ff\u5c14\u6cca\u80bd\u5728\u4f53\u91cd\u4e0e\u8170\u56f4\u6539\u5584\u65b9\u9762\u540c\u6837\u4f18\u4e8e\u5e38\u89c4\u5f3a\u5316\u6cbb\u7597\u7ec4\uff0c\u5e76\u4f34\u968f\u8840\u8102\u3001\u03b2\u7ec6\u80de\u529f\u80fd\u53ca\u80f0\u5c9b\u7d20\u654f\u611f\u6027\u7b49\u591a\u9879\u4ee3\u8c22\u6307\u6807\u6539\u5584\u3002\uff08\u754c\u9762\uff09", "title": "\u793c\u6765\u53d1\u8868\u6700\u65b0\u7814\u7a76\uff1a\u66ff\u5c14\u6cca\u80bd\u65e9\u671f\u5e72\u98842\u578b\u7cd6\u5c3f\u75c5\u53ef\u5e26\u6765\u66f4\u5927\u83b7\u76ca", "url": "https://wallstreetcn.com/livenews/3110613"}, {"category": "\u79d1\u6280", "content": "", "source": "\u534e\u5c14\u8857\u89c1\u95fb", "summary": "\u4e2d\u5fc3\u901a\u8baf\u6da8\u7ea613%\uff0c\u667a\u8c31\u6da8\u7ea614%\uff0c\u5251\u6865\u79d1\u6280\u6da8\u7ea611%\uff0c\u534e\u8679\u534a\u5bfc\u4f53\u6da8\u7ea612%\uff0c\u5c0f\u9e4f\u96c6\u56e2\u6da8\u7ea66%\uff0c\u6ce1\u6ce1\u739b\u7279\u6da8\u7ea65%\u3002", "title": "\u6052\u751f\u6307\u6570\u6536\u76d8\u8dcc1.27%\uff0c\u6052\u751f\u79d1\u6280\u6307\u6570\u8dcc0.39%", "url": "https://wallstreetcn.com/livenews/3110592"}, {"category": "\u79d1\u6280", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "\u4e24\u90e8\u95e8\u8054\u624b \u7cfb\u7edf\u5e03\u5c40\u4eba\u5de5\u667a\u80fd\u8ba1\u91cf\u80fd\u529b\u5efa\u8bbe", "url": "https://www.yicai.com/news/103205741.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "\u6600\u51a2\u79d1\u6280\uff1a\u76ee\u524d\u516c\u53f8MLCC\u4ea7\u54c1\u4e3b\u8981\u5e94\u7528\u4e8e\u6d88\u8d39\u7535\u5b50\u9886\u57df\uff0c\u6682\u672a\u5e94\u7528\u4e8eAI\u7b97\u529b\u670d\u52a1\u5668", "url": "https://www.yicai.com/news/103205704.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "\u91d1\u94bc\u80a1\u4efd\uff1a\u7f51\u4f20\u516c\u53f8\u662f\u56fd\u5185\u91cd\u8981\u82af\u7247\u751f\u4ea7\u5546\u6838\u5fc3\u6750\u6599\u4f9b\u5e94\u5546\u4ee5\u53ca\u7b7e\u8ba2\u76f8\u5173\u5927\u989d\u8ba2\u5355\u7b49\u4e3a\u4e0d\u5b9e\u4fe1\u606f", "url": "https://www.yicai.com/news/103205697.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "\u4e2d\u4e13\u5c0f\u4f19AI\u77ed\u7247\u706b\u5230\u597d\u83b1\u575e \u201c\u6caa\u4e5d\u6761\u201d\u6253\u7834\u5b66\u5386\u95e8\u69db \u6709\u624d\u534e\u5c31\u80fd\u5728\u4e0a\u6d77\u5b89\u5bb6\u8ffd\u68a6", "url": "https://www.yicai.com/video/103205683.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "\u5357\u5411\u8d44\u91d1\u4e28\u4e2d\u82af\u56fd\u9645\u83b7\u51c0\u4e70\u516541.74\u4ebf\u6e2f\u5143", "url": "https://www.yicai.com/news/103205678.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "\u5929\u6d25\uff1a\u79ef\u6781\u63a8\u52a8\u672c\u5e02\u533b\u7597\u673a\u6784\u3001\u79d1\u7814\u9662\u6240\u7b49\u91c7\u8d2d\u8111\u673a\u63a5\u53e3\u4eea\u5668\u8bbe\u5907", "url": "https://www.yicai.com/news/103205667.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "\u771f\u8bda\u6c38\u8fdc\u662f\u5fc5\u6740\u6280\uff01AI\u53ef\u4ee5\u5929\u9a6c\u884c\u7a7a \u4f46\u4f7f\u7528AI\u7684\u4eba\u5fc5\u987b\u811a\u8e0f\u5b9e\u5730", "url": "https://www.yicai.com/video/103205661.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "\u4f4e\u8d28\u91cf\u7684AI\u4f5c\u54c1\u5145\u65a5\u5e02\u573a\uff0cAI\u5c31\u4f1a\u8ddf\u201c\u5783\u573e \u5077\u61d2\u201d\u753b\u7b49\u53f7\uff0c\u89c2\u4f17\u5c31\u65e0\u6cd5\u771f\u6b63\u8ba4\u540cAI", "url": "https://www.yicai.com/video/103205658.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "13\u5c81AI\u539f\u4f4f\u6c11\uff1a\u4e00\u76f4\u95ee\u8001\u5e08\u4f1a\u4e0d\u597d\u610f\u601d \u4f46AI\u6c38\u8fdc\u4e0d\u4f1a\u5acc\u6211\u70e6 \u8fd9\u662f\u6211\u4eec\u8fd9\u4ee3\u4eba\u72ec\u4eab\u7684\u5962\u4f88", "url": "https://www.yicai.com/video/103205654.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "\u5929\u6d25\uff1a\u52302030\u5e74\u5f62\u6210\u603b\u89c4\u6a21\u8d85100\u4ebf\u5143\u7684\u8111\u673a\u63a5\u53e3\u4ea7\u4e1a\u57fa\u91d1\u7fa4", "url": "https://www.yicai.com/news/103205656.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u7b2c\u4e00\u8d22\u7ecf", "summary": "", "title": "\u56fd\u5bb6\u96c6\u6210\u7535\u8def\u57fa\u91d1\u5bf9\u4e2d\u82af\u56fd\u9645\u7684\u591a\u5934\u6301\u4ed3\u6bd4\u4f8b\u964d\u81f37.99%", "url": "https://www.yicai.com/news/103205638.html"}, {"category": "\u79d1\u6280", "content": "", "source": "\u4eca\u65e5\u5934\u6761", "summary": "\u5934\u6761\u70ed\u699c\u70ed\u5ea6 4194715", "title": "\u822a\u5929\u5458\u8981\u56de\u5bb6\u7684\u5feb\u4e50\u5168\u5199\u8138\u4e0a\u4e86", "url": "https://www.toutiao.com/trending/7643967998655037481/?category_name=topic_innerflow\u0026event_type=hot_board\u0026log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%224%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227643967998655037481%22%2C%22hot_board_impr_id%22%3A%2220260528183639D05B29B846FBE5BCCB8A%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%88%AA%E5%A4%A9%E5%91%98%E8%A6%81%E5%9B%9E%E5%AE%B6%E7%9A%84%E5%BF%AB%E4%B9%90%E5%85%A8%E5%86%99%E8%84%B8%E4%B8%8A%E4%BA%86%22%7D\u0026rank=\u0026style_id=40132\u0026topic_id=7643967998655037481"}, {"category": "\u79d1\u6280", "content": "", "source": "\u4eca\u65e5\u5934\u6761", "summary": "\u5934\u6761\u70ed\u699c\u70ed\u5ea6 1543149", "title": "\u9ece\u771f\u4e3b\u515a\u79f0\u7528\u65e0\u4eba\u673a\u51fb\u4e2d\u4ee5\u519b\u8fd0\u5175\u8f66", "url": "https://www.toutiao.com/trending/7644426547360874502/?category_name=topic_innerflow\u0026event_type=hot_board\u0026log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227644426547360874502%22%2C%22hot_board_impr_id%22%3A%2220260528183639D05B29B846FBE5BCCB8A%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%BB%8E%E7%9C%9F%E4%B8%BB%E5%85%9A%E7%A7%B0%E7%94%A8%E6%97%A0%E4%BA%BA%E6%9C%BA%E5%87%BB%E4%B8%AD%E4%BB%A5%E5%86%9B%E8%BF%90%E5%85%B5%E8%BD%A6%22%7D\u0026rank=\u0026style_id=40132\u0026topic_id=7644426547360874502"}, {"category": "\u79d1\u6280", "content": "", "source": "\u4eca\u65e5\u5934\u6761", "summary": "\u5934\u6761\u70ed\u699c\u70ed\u5ea6 935967", "title": "\u535a\u4e3b\uff1a\u4e2d\u56fd\u534a\u5bfc\u4f53\u5f00\u542f\u7cfb\u7edf\u7ea7\u6362\u9053", "url": "https://www.toutiao.com/trending/7644873222827019819/?category_name=topic_innerflow\u0026event_type=hot_board\u0026log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227644873222827019819%22%2C%22hot_board_impr_id%22%3A%2220260528183639D05B29B846FBE5BCCB8A%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%8D%9A%E4%B8%BB%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%BC%80%E5%90%AF%E7%B3%BB%E7%BB%9F%E7%BA%A7%E6%8D%A2%E9%81%93%22%7D\u0026rank=\u0026style_id=40132\u0026topic_id=7644873222827019819"}, {"category": "\u79d1\u6280", "content": "", "source": "\u4eca\u65e5\u5934\u6761", "summary": "\u5934\u6761\u70ed\u699c\u70ed\u5ea6 281907", "title": "\u822a\u5929\u5458\u6b66\u98de\u5373\u5c06\u56de\u5bb6", "url": "https://www.toutiao.com/trending/7644779118072528946/?category_name=topic_innerflow\u0026event_type=hot_board\u0026log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%228%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227644779118072528946%22%2C%22hot_board_impr_id%22%3A%2220260528183639D05B29B846FBE5BCCB8A%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%88%AA%E5%A4%A9%E5%91%98%E6%AD%A6%E9%A3%9E%E5%8D%B3%E5%B0%86%E5%9B%9E%E5%AE%B6%22%7D\u0026rank=\u0026style_id=40132\u0026topic_id=7644779118072528946"}, {"category": "\u79d1\u6280", "content": "", "source": "\u54d4\u54e9\u54d4\u54e9\u70ed\u641c", "summary": "\u70ed\u641c\u70ed\u5ea6 2054900", "title": "AI\u6539\u5199\u9ed1\u888d\u7ea0\u5bdf\u961f\u7ed3\u5c40", "url": "https://search.bilibili.com/all?keyword=AI%E6%94%B9%E5%86%99%E9%BB%91%E8%A2%8D%E7%BA%A0%E5%AF%9F%E9%98%9F%E7%BB%93%E5%B1%80"}], "\u80fd\u6e90": [{"category": "\u80fd\u6e90", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u798f\u5efa\u8fde\u6c5f\uff1a\u4e91\u96fe\u4e2d\u7684\u98ce\u7535\u573a", "url": "https://www.news.cn/photo/20260528/36a961187a77493ea4daa50bedaca343/c.html"}, {"category": "\u80fd\u6e90", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u5149\u4f0f\u7ec4\u4ef6\u4e24\u9879\u5f3a\u5236\u6027\u56fd\u5bb6\u6807\u51c6\u53d1\u5e03", "url": "https://www.news.cn/energy/20260528/46be70c6d6f34a629fa3d35ae3aa7780/c.html"}, {"category": "\u80fd\u6e90", "content": "", "source": "\u534e\u5c14\u8857\u89c1\u95fb", "summary": "\u6b27\u76df\u6210\u5458\u56fd\u672a\u8ba1\u5212\u91c7\u53d6\u989d\u5916\u7684\u5929\u7136\u6c14\u5e02\u573a\u5e72\u9884\u63aa\u65bd\u3002\uff08\u5f6d\u535a\uff09", "title": "\u6b27\u76df\u6210\u5458\u56fd\u672a\u8ba1\u5212\u91c7\u53d6\u989d\u5916\u7684\u5929\u7136\u6c14\u5e02\u573a\u5e72\u9884\u63aa\u65bd\u3002\uff08\u5f6d\u535a\uff09", "url": "https://wallstreetcn.com/livenews/3110644"}], "\u8d44\u6e90": [{"category": "\u8d44\u6e90", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u5fb7\u5174\u94dc\u77ff\u515a\u5efa\u5f15\u9886\u7eff\u8272\u53d1\u5c55", "url": "https://www.news.cn/politics/20260528/9f31aa6621f24cafb61b18bdcd080373/c.html"}, {"category": "\u8d44\u6e90", "content": "", "source": "\u65b0\u534e\u7f51", "summary": "", "title": "\u56de\u5e94\u6b27\u76df\u62df\u5bf9\u8fdb\u53e3\u94a2\u94c1\u52a0\u7a0e", "url": "https://www.news.cn/fortune/20260528/d83edcc5db674e11b44ceeee9a6609e4/c.html"}, {"category": "\u8d44\u6e90", "content": "", "source": "\u534e\u5c14\u8857\u89c1\u95fb", "summary": "\u5728\u4eca\u5929\u53ec\u5f00\u7684\u5546\u52a1\u90e8\u4f8b\u884c\u65b0\u95fb\u53d1\u5e03\u4f1a\u4e0a\uff0c\u65b0\u95fb\u53d1\u8a00\u4eba\u4ecb\u7ecd\uff0c\u8fd1\u671f\uff0c\u4e2d\u65b9\u5c0620\u5bb6\u65e5\u672c\u7684\u76f8\u5173\u5b9e\u4f53\u5217\u5165\u7ba1\u63a7\u540d\u5355\uff0c\u5c0620\u5bb6\u65e5\u672c\u76f8\u5173\u5b9e\u4f53\u5217\u5165\u5173\u6ce8\u540d\u5355\uff0c\u76ee\u7684\u662f\u5236\u6b62\u65e5\u672c\u518d\u519b\u4e8b\u5316\u548c\u62e5\u6838\u4f01\u56fe\uff0c\u5b8c\u5168\u6b63\u5f53\u3001\u5408\u7406\u3001\u5408\u6cd5\u3002\n\n\u5546\u52a1\u90e8\u65b0\u95fb\u53d1\u8a00\u4eba\u4f55\u4e9a\u4e1c\u8868\u793a\uff0c\u4e2d\u56fd\u653f\u5e9c\u4f9d\u6cd5\u4f9d\u89c4\u5bf9\u7a00\u571f\u7b49\u5173\u952e\u77ff\u4ea7\u5b9e\u65bd\u51fa\u53e3\u7ba1\u5236\uff0c\u5bf9\u5408\u89c4\u6c11\u7528\u7684\u8bb8\u53ef\u7533\u8bf7\u4e88\u4ee5\u5ba1\u6838\u3002\u5f53\u524d\u4e2d\u65e5\u5173\u7cfb\u9762\u4e34\u7740\u4e25\u91cd\u56f0\u96be\uff0c\u6839\u6e90\u5728\u4e8e\u65e5\u672c\u9996\u76f8\u9ad8\u5e02\u65e9\u82d7\u9519\u8bef\u8a00\u884c\uff0c\u8d23\u4efb\u5b8c\u5168\u5728\u65e5\u65b9\u3002\u6211\u4eec\u6566\u4fc3\u65e5\u65b9\u6b63\u89c6\u95ee\u9898\u6839\u6e90\u3001\u5207\u5b9e\u53cd\u601d\u7ea0\u9519\uff0c\u4e3a\u4e2d\u65e5\u6b63\u5e38\u4ea4\u6d41\u521b\u9020\u5fc5\u8981\u6761\u4ef6\u3002\uff08\u592e\u89c6\uff09", "title": "\u5546\u52a1\u90e8\uff1a\u5bf9\u65e5\u76f8\u5173\u51fa\u53e3\u7ba1\u5236\u63aa\u65bd\u5b8c\u5168\u6b63\u5f53\u5408\u7406\u5408\u6cd5", "url": "https://wallstreetcn.com/livenews/3110597"}]}, "overall": "\u822a\u5929\u5458\u8f6e\u6362\u5e38\u6001\u5316\u53e0\u52a0\u201c\u4e5d\u7ae0\u56db\u53f7\u201d\u91cf\u5b50\u8ba1\u7b97\u7a81\u7834\uff0c\u4e24\u90e8\u95e8\u53d1\u5e03AI\u8ba1\u91cf\u6307\u5f15\uff0c\u79d1\u6280\u4e3b\u7ebf\u805a\u7126\u822a\u5929\u519b\u5de5\uff08\u822a\u5929\u7535\u5b50\uff09\u3001\u91cf\u5b50\u8ba1\u7b97\uff08\u56fd\u76fe\u91cf\u5b50\uff09\u53caAI\u8ba1\u91cf\uff08\u4e2d\u79d1\u66d9\u5149\uff09\u3002\u5149\u4f0f\u7ec4\u4ef6\u4e24\u9879\u5f3a\u5236\u6027\u56fd\u6807\u53d1\u5e03\uff0c\u63a8\u52a8\u6280\u672f\u5347\u7ea7\u4e0e\u4ea7\u80fd\u51fa\u6e05\uff0c\u5173\u6ce8\u9686\u57fa\u7eff\u80fd\u3001\u6676\u79d1\u80fd\u6e90\uff1b\u6b27\u76df\u672a\u989d\u5916\u5e72\u9884\u5929\u7136\u6c14\u5e02\u573a\uff0c\u5229\u597d\u56fd\u5185\u8fdb\u53e3\u6210\u672c\u7a33\u5b9a\uff0c\u5173\u6ce8\u65b0\u5965\u80a1\u4efd\u3002\u7a00\u571f\u51fa\u53e3\u7ba1\u5236\u5f3a\u5316\u4f9b\u7ed9\u6536\u7f29\uff0c\u5546\u52a1\u90e8\u5bf9\u65e5\u51fa\u53e3\u7ba1\u5236\u5347\u7ea7\uff0c\u5229\u597d\u7a00\u571f\u6c38\u78c1\u81ea\u4e3b\u53ef\u63a7\uff0c\u5173\u6ce8\u5317\u65b9\u7a00\u571f\u3001\u4e2d\u79d1\u4e09\u73af\u3002\u94bc\u4ef7\u5e74\u521d\u81f3\u4eca\u6da8\u8d8525%\uff0c\u4f9b\u9700\u504f\u7d27\u652f\u6491\u4ef7\u683c\uff0c\u5173\u6ce8\u91d1\u94bc\u80a1\u4efd\uff0c\u4f46\u9700\u8b66\u60d5\u82af\u7247\u6750\u6599\u6982\u5ff5\u7092\u4f5c\u964d\u6e29\u3002\u4e92\u8054\u7f51\u4e91\u7aef\u62db\u8058\u6708\u53e0\u52a0AI\u667a\u80fd\u4f53\u5e73\u53f0\u53d1\u5e03\uff0c\u79d1\u6280\u4f01\u4e1a\u878d\u8d44\u6d3b\u8dc3\uff0c\u5229\u597d\u5238\u5546\uff08\u4e1c\u65b9\u8d22\u5bcc\uff09\u53caAI\u5e94\u7528\uff08\u79d1\u5927\u8baf\u98de\uff09\u3002", "summaries": {"\u79d1\u6280": "\u3010\u79d1\u6280\u3011\u795e\u821f\u4e8c\u5341\u4e00\u53f7\u4e0e\u4e8c\u5341\u4e09\u53f7\u4e58\u7ec4\u5b8c\u6210\u5728\u8f68\u4ea4\u63a5\uff0c\u822a\u5929\u5458\u8f6e\u6362\u5e38\u6001\u5316\u5229\u597d\u822a\u5929\u4ea7\u4e1a\u94fe\uff1b\u201c\u4e5d\u7ae0\u56db\u53f7\u201d\u91cf\u5b50\u8ba1\u7b97\u7a81\u7834\u7acb\u65b9\u7ea7\u7b97\u529b\uff0c\u53e0\u52a0\u4e24\u90e8\u95e8\u53d1\u5e03AI\u8ba1\u91cf\u4f53\u7cfb\u6307\u5f15\uff0c\u63a8\u52a8\u91cf\u5b50\u4e0eAI\u6280\u672f\u843d\u5730\u3002\u5229\u597d\u822a\u5929\u519b\u5de5\uff08\u822a\u5929\u7535\u5b50\uff09\u3001\u91cf\u5b50\u8ba1\u7b97\uff08\u56fd\u76fe\u91cf\u5b50\uff09\u3001AI\u8ba1\u91cf\uff08\u4e2d\u79d1\u66d9\u5149\uff09\u3002\n\n\u3010\u8d44\u6e90\u3011\u91d1\u94bc\u80a1\u4efd\u6f84\u6e05\u975e\u82af\u7247\u6838\u5fc3\u6750\u6599\u4f9b\u5e94\u5546\uff0c\u4f46\u94bc\u4ef7\u5e74\u521d\u81f3\u4eca\u6da8\u8d8525%\uff0c\u4f9b\u9700\u504f\u7d27\u652f\u6491\u4ef7\u683c\u3002\u5229\u597d\u94bc\u8d44\u6e90\uff08\u91d1\u94bc\u80a1\u4efd\uff09\uff0c\u5229\u7a7a\u82af\u7247\u6750\u6599\u6982\u5ff5\u7092\u4f5c\u3002\n\n\u3010\u91d1\u878d\u3011\u4e92\u8054\u7f51\u4f01\u4e1a\u4e91\u7aef\u62db\u8058\u67086\u6708\u5f00\u5c55\uff0c\u53e0\u52a0AI\u667a\u80fd\u4f53\u5e73\u53f0\u53d1\u5e03\uff0c\u79d1\u6280\u4f01\u4e1a\u878d\u8d44\u6d3b\u8dc3\u5ea6\u63d0\u5347\uff0c\u5229\u597d\u5238\u5546\uff08\u4e1c\u65b9\u8d22\u5bcc\uff09\u3001AI\u5e94\u7528\uff08\u79d1\u5927\u8baf\u98de\uff09\u3002", "\u80fd\u6e90": "\u3010\u79d1\u6280\u3011\u65e0\u76f4\u63a5\u76f8\u5173\u65b0\u95fb\uff0c\u6682\u4e0d\u66f4\u65b0\u3002\n\n\u3010\u7535\u529b\u3011\u65e0\u76f4\u63a5\u76f8\u5173\u65b0\u95fb\uff0c\u6682\u4e0d\u66f4\u65b0\u3002\n\n\u3010\u8d44\u6e90\u3011\u65e0\u76f4\u63a5\u76f8\u5173\u65b0\u95fb\uff0c\u6682\u4e0d\u66f4\u65b0\u3002\n\n\u3010\u80fd\u6e90\u3011  \n1. **\u5149\u4f0f\u7ec4\u4ef6\u4e24\u9879\u5f3a\u5236\u6027\u56fd\u5bb6\u6807\u51c6\u53d1\u5e03**\uff1a\u5229\u597d\u5149\u4f0f\u5236\u9020\u9f99\u5934\uff0c\u63a8\u52a8\u884c\u4e1a\u6280\u672f\u5347\u7ea7\u4e0e\u6dd8\u6c70\u843d\u540e\u4ea7\u80fd\u3002\u5173\u6ce8\u9686\u57fa\u7eff\u80fd\uff08601012\uff09\u3001\u6676\u79d1\u80fd\u6e90\uff08688223\uff09\u3002  \n2. **\u6b27\u76df\u672a\u8ba1\u5212\u989d\u5916\u5e72\u9884\u5929\u7136\u6c14\u5e02\u573a**\uff1a\u5229\u7a7a\u6b27\u6d32\u5929\u7136\u6c14\u4ef7\u683c\u9884\u671f\uff0c\u4f46\u5229\u597d\u56fd\u5185\u5929\u7136\u6c14\u8fdb\u53e3\u6210\u672c\u7a33\u5b9a\u3002\u5173\u6ce8\u65b0\u5965\u80a1\u4efd\uff08600803\uff09\u3001\u5e7f\u6c47\u80fd\u6e90\uff08600256\uff09\u3002  \n3. **\u798f\u5efa\u8fde\u6c5f\u98ce\u7535\u573a\u4e91\u96fe\u4e2d\u8fd0\u8425**\uff1a\u65e0\u76f4\u63a5\u6295\u8d44\u4fe1\u53f7\uff0c\u4f46\u53cd\u6620\u98ce\u7535\u8fd0\u8425\u7a33\u5b9a\u6027\uff0c\u5173\u6ce8\u98ce\u7535\u8fd0\u8425\u5546\u9f99\u6e90\u7535\u529b\uff08001289\uff09\u3002\n\n\u3010\u91d1\u878d\u3011\u65e0\u76f4\u63a5\u76f8\u5173\u65b0\u95fb\uff0c\u6682\u4e0d\u66f4\u65b0\u3002", "\u8d44\u6e90": "\u3010\u79d1\u6280\u3011\u5546\u52a1\u90e8\u5bf9\u65e5\u51fa\u53e3\u7ba1\u5236\u5347\u7ea7\uff0c\u6d89\u53ca\u7a00\u571f\u7b49\u5173\u952e\u77ff\u4ea7\uff0c\u5229\u597d\u56fd\u5185\u7a00\u571f\u6c38\u78c1\u53ca\u519b\u5de5\u6750\u6599\u81ea\u4e3b\u53ef\u63a7\u3002\u5173\u6ce8\u5317\u65b9\u7a00\u571f\u3001\u4e2d\u79d1\u4e09\u73af\u3002\n\n\u3010\u8d44\u6e90\u3011\u7a00\u571f\u51fa\u53e3\u7ba1\u5236\u5f3a\u5316\u4f9b\u7ed9\u6536\u7f29\u9884\u671f\uff0c\u53e0\u52a0\u5fb7\u5174\u94dc\u77ff\u7eff\u8272\u8f6c\u578b\uff0c\u5229\u597d\u7a00\u571f\u53ca\u94dc\u677f\u5757\u3002\u5173\u6ce8\u5317\u65b9\u7a00\u571f\u3001\u6c5f\u897f\u94dc\u4e1a\u3002\n\n\u3010\u80fd\u6e90\u3011\u6b27\u76df\u62df\u5bf9\u8fdb\u53e3\u94a2\u94c1\u52a0\u7a0e\uff0c\u6216\u95f4\u63a5\u5f71\u54cd\u65b0\u80fd\u6e90\u8bbe\u5907\u51fa\u53e3\u6210\u672c\uff0c\u5229\u7a7a\u5149\u4f0f\u652f\u67b6\u3001\u98ce\u7535\u5854\u7b52\u7b49\u51fa\u53e3\u578b\u4f01\u4e1a\u3002\u5173\u6ce8\u91d1\u98ce\u79d1\u6280\u3001\u5929\u5408\u5149\u80fd\u3002"}, "total": 50};
 
     const pie = echarts.init(pieEl);
     const pieData = Object.entries(data.groups).map(([k,v]) => ({name:k, value:v.length}));
@@ -494,7 +521,7 @@ function renderCharts() {
       tooltip: { trigger:'item', formatter:'{b}: {c} ({d}%)' },
       series: [{ type:'pie', radius:['40%','68%'], itemStyle:{borderRadius:5,borderColor:'#fff',borderWidth:2},
         label:{show:true,formatter:'{b}\n{d}%'}, data:pieData,
-        color:['#c62828','#1565c0','#2e7d32','#e65100','#00838f','#546e7a'] }]
+        color:['#1565c0','#2e7d32','#e65100','#f9a825','#c62828','#546e7a'] }]
     });
 
     const src = {};
