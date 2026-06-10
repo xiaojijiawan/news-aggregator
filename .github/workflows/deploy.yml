@@ -2,8 +2,8 @@ name: Deploy static news dashboard
 
 on:
   schedule:
-    # 08:30 Beijing time = 00:30 UTC
-    - cron: "30 0 * * *"
+    # 08:30 and 20:30 Beijing time = 00:30 and 12:30 UTC
+    - cron: "30 0,12 * * *"
   workflow_dispatch:
 
 jobs:
@@ -18,14 +18,7 @@ jobs:
           cache: pip
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Create config.yaml from example
-        env:
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-        run: |
-          cp config.example.yaml config.yaml
-          sed -i "s/__DEEPSEEK_API_KEY__/$DEEPSEEK_API_KEY/g" config.yaml
+        run: pip install httpx beautifulsoup4 jinja2
 
       - name: Generate static dashboard
         env:

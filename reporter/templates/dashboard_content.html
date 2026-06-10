@@ -4,12 +4,6 @@
 </div>
 
 <div class="container">
-  {% if data.overall %}
-  <div class="overall">
-    <h3>今日综述</h3>
-    {{ data.overall }}
-  </div>
-  {% endif %}
 
   <div class="stats-row">
     <div class="stat-card">
@@ -26,7 +20,7 @@
 
   <div class="chart-row">
     <div class="chart-box">
-      <div class="chart-title">新闻类别分布</div>
+      <div class="chart-title">板块分布</div>
       <div class="chart-inner" id="pie-chart"></div>
     </div>
     <div class="chart-box">
@@ -38,13 +32,10 @@
   {% for cat_name, cat_items in data.groups.items() %}
   {% set cat_class = {"科技":"tech","能源":"energy","资源":"resource","电力":"power","金融":"finance"}.get(cat_name, "finance") %}
   <div class="cat-section">
-    <div class="cat-header" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'">
+    <div class="cat-header" onclick="var list=this.parentElement.querySelector('.news-list');list.classList.toggle('open');var tgl=this.parentElement.querySelector('.news-toggle');tgl.textContent=list.classList.contains('open')?'收起 ▴':'展开全部新闻 ▾'">
       <span class="cat-tag {{ cat_class }}">{{ cat_name }}</span>
       <span class="cat-count">{{ cat_items|length }} 条</span>
     </div>
-    {% if data.summaries.get(cat_name) %}
-    <div class="cat-digest"><p>{{ data.summaries[cat_name] }}</p></div>
-    {% endif %}
     <div class="news-toggle" onclick="var nl=this.nextElementSibling;nl.classList.toggle('open');this.textContent=nl.classList.contains('open')?'收起 ▴':'展开全部新闻 ▾'">展开全部新闻 ▾</div>
     <div class="news-list">
       {% for item in cat_items %}

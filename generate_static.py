@@ -1,4 +1,4 @@
-"""Generate static HTML dashboard — used by GitHub Actions CI."""
+"""Generate static HTML dashboard — used by GitHub Actions CI. No LLM needed."""
 import asyncio
 import json
 import os
@@ -6,12 +6,10 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-import yaml
 from jinja2 import Environment, FileSystemLoader
 
 ROOT = Path(__file__).parent
 
-# Ensure the project root is on sys.path so imports work
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
@@ -21,24 +19,28 @@ from fetcher.bilibili import BilibiliFetcher
 from fetcher.toutiao import ToutiaoFetcher
 from fetcher.wallstreetcn import WallstreetcnFetcher
 from fetcher.yicai import YicaiFetcher
+from fetcher.baidu import BaiduFetcher
 from classifier import classify_all
-from summarizer import configure as configure_llm, generate_briefing, generate_overall
 
 TEMPLATE_DIR = ROOT / "reporter" / "templates"
+
 CATEGORY_PRIORITY = {"科技": 0, "能源": 1, "资源": 2, "电力": 3, "金融": 4}
 CATEGORY_ORDER = ["科技", "能源", "资源", "电力", "金融"]
 
-
-def cap_news_items(items: list[dict], limit: int = 50) -> list[dict]:
-    items.sort(key=lambda x: CATEGORY_PRIORITY.get(x.get("category", "热点"), 99))
-    return items[:limit]
+DISPLAY_LIMIT = 100  # show up to 100 items, no LLM bottleneck
 
 
-def build_page_data(today_items: list[dict], summaries: dict[str, str],
-                    overall: str, generated_at: str) -> dict:
+def cap_news_items(items: list[dict]) -> list[dict]:
+    if len(items) <= DISPLAY_LIMIT:
+        return items
+    items.sort(key=lambda x: CATEGORY_PRIORITY.get(x.get("category", "金融"), 99))
+    return items[:DISPLAY_LIMIT]
+
+
+def build_page_data(items: list[dict], generated_at: str) -> dict:
     groups: dict[str, list[dict]] = {}
-    for i in today_items:
-        cat = i.get("category", "热点")
+    for i in items:
+        cat = i.get("category", "金融")
         groups.setdefault(cat, []).append(i)
 
     sorted_groups = {k: groups[k] for k in CATEGORY_ORDER if k in groups}
@@ -48,9 +50,7 @@ def build_page_data(today_items: list[dict], summaries: dict[str, str],
 
     return {
         "groups": sorted_groups,
-        "summaries": summaries or {},
-        "overall": overall or "",
-        "total": len(today_items),
+        "total": len(items),
         "generated_at": generated_at,
         "category_json": json.dumps(
             {k: len(v) for k, v in sorted_groups.items()}, ensure_ascii=False
@@ -59,20 +59,12 @@ def build_page_data(today_items: list[dict], summaries: dict[str, str],
 
 
 async def generate():
-    config_path = ROOT / "config.yaml"
-    if not config_path.exists():
-        print("config.yaml not found — check CI secrets injection.")
-        sys.exit(1)
-
-    with open(config_path, encoding="utf-8") as f:
-        config = yaml.safe_load(f)
-
-    # Init LLM
-    configure_llm(config["deepseek"]["api_key"], config["deepseek"].get("model", "deepseek-chat"))
-
-    # Fetch from all sources
     print("Fetching news...")
-    fetchers = [CctvFetcher(), XinhuaFetcher(), WallstreetcnFetcher(), YicaiFetcher(), ToutiaoFetcher(), BilibiliFetcher()]
+    fetchers = [
+        CctvFetcher(), XinhuaFetcher(),
+        WallstreetcnFetcher(), YicaiFetcher(),
+        ToutiaoFetcher(), BaiduFetcher(), BilibiliFetcher(),
+    ]
     results = await asyncio.gather(*[f.fetch() for f in fetchers])
 
     all_items = []
@@ -80,7 +72,7 @@ async def generate():
         all_items.extend(items)
     print(f"  Fetched {len(all_items)} raw items")
 
-    # Dedup by URL (CI runs are fresh, no cross-session DB)
+    # Dedup by URL
     seen_urls = set()
     unique = []
     for item in all_items:
@@ -92,30 +84,19 @@ async def generate():
     # Classify
     classified = classify_all(unique)
 
-    # Build display list (no DB — use classified items directly)
+    # Build display list
     today_items = [
         {"title": it.title, "url": it.url, "summary": it.summary,
-         "content": it.content, "source": it.source, "category": it.category}
+         "source": it.source, "category": it.category}
         for it in classified
     ]
 
-    # Cap at 50
+    # Cap
     today_items = cap_news_items(today_items)
     print(f"  After cap: {len(today_items)} items")
 
-    # Group for summarization
-    groups: dict[str, list[dict]] = {}
-    for i in today_items:
-        groups.setdefault(i.get("category", "热点"), []).append(i)
-
-    # Generate LLM summaries
-    print("Generating summaries (DeepSeek)...")
-    summaries = await generate_briefing(groups)
-    overall = await generate_overall(summaries)
-
     generated_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-    data = build_page_data(today_items, summaries, overall, generated_at)
+    data = build_page_data(today_items, generated_at)
 
     # Render static page
     env = Environment(loader=FileSystemLoader(str(TEMPLATE_DIR)))
