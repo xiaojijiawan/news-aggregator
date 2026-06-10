@@ -25,6 +25,19 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC"
 
 .container { max-width: 960px; margin: 0 auto; padding: 24px 20px; }
 
+/* Monthly highlights */
+.highlights { background: linear-gradient(135deg, #fff8e1, #fff3e0); border: 2px solid #ffb300; border-radius: 14px; padding: 24px 28px; margin-bottom: 24px; box-shadow: 0 2px 16px rgba(255,179,0,.15); }
+.highlights h2 { font-size: 18px; color: #e65100; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+.highlights h2 .icon { font-size: 22px; }
+.highlights ol { padding-left: 24px; }
+.highlights ol li { padding: 10px 0; border-bottom: 1px dashed #ffe0b2; font-size: 15px; line-height: 1.8; }
+.highlights ol li:last-child { border-bottom: none; }
+.highlights ol li a { color: #d84315; text-decoration: none; font-weight: 600; }
+.highlights ol li a:hover { text-decoration: underline; }
+.highlights .hl-date { font-size: 12px; color: #999; margin-left: 8px; }
+.highlights .hl-source { font-size: 12px; color: #e65100; background: #fff3e0; padding: 1px 8px; border-radius: 10px; margin-left: 6px; }
+.highlights .empty-hl { color: #999; font-size: 14px; text-align: center; padding: 20px; }
+
 .empty { text-align: center; padding: 80px 20px; }
 .empty .icon { font-size: 64px; margin-bottom: 20px; opacity: .4; }
 .empty h2 { font-size: 20px; color: #666; margin-bottom: 8px; }
@@ -77,6 +90,23 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC"
     <a class="btn btn-secondary" href="{{ repo_url }}" target="_blank">源码</a>
   </div>
 </div>
+
+{% if highlights %}
+<div class="container" style="padding-bottom:0">
+  <div class="highlights">
+    <h2><span class="icon">🔥</span> 近30天市场要闻 Top 5</h2>
+    <ol>
+      {% for h in highlights %}
+      <li>
+        <a href="{{ h.url }}" target="_blank">{{ h.title }}</a>
+        <span class="hl-source">{{ h.source }}</span>
+        <span class="hl-date">{{ h._date }}</span>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</div>
+{% endif %}
 
 <div id="content">
   {% include "dashboard_content.html" %}
