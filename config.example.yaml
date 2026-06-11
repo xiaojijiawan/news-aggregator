@@ -24,7 +24,7 @@ sources:
     name: "第一财经"
 
 schedule:
-  time: "08:30"
+  time: "08:00"
 
 output:
   html_path: "./output/index.html"
