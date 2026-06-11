@@ -26,17 +26,22 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC"
 .container { max-width: 960px; margin: 0 auto; padding: 24px 20px; }
 
 /* Monthly highlights */
-.highlights { background: linear-gradient(135deg, #fff8e1, #fff3e0); border: 2px solid #ffb300; border-radius: 14px; padding: 24px 28px; margin-bottom: 24px; box-shadow: 0 2px 16px rgba(255,179,0,.15); }
-.highlights h2 { font-size: 18px; color: #e65100; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
-.highlights h2 .icon { font-size: 22px; }
-.highlights ol { padding-left: 24px; }
-.highlights ol li { padding: 10px 0; border-bottom: 1px dashed #ffe0b2; font-size: 15px; line-height: 1.8; }
-.highlights ol li:last-child { border-bottom: none; }
-.highlights ol li a { color: #d84315; text-decoration: none; font-weight: 600; }
-.highlights ol li a:hover { text-decoration: underline; }
-.highlights .hl-date { font-size: 12px; color: #999; margin-left: 8px; }
-.highlights .hl-source { font-size: 12px; color: #e65100; background: #fff3e0; padding: 1px 8px; border-radius: 10px; margin-left: 6px; }
-.highlights .empty-hl { color: #999; font-size: 14px; text-align: center; padding: 20px; }
+.hl-row { display: flex; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+.hl-panel { flex: 1; min-width: 340px; border-radius: 14px; padding: 20px 24px; box-shadow: 0 2px 12px rgba(0,0,0,.06); }
+.hl-panel.finance { background: linear-gradient(135deg, #fff8e1, #fff3e0); border: 2px solid #ffb300; }
+.hl-panel.industry { background: linear-gradient(135deg, #e8f0fe, #e3f2fd); border: 2px solid #1565c0; }
+.hl-panel h3 { font-size: 16px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.hl-panel.finance h3 { color: #e65100; }
+.hl-panel.industry h3 { color: #1565c0; }
+.hl-panel .icon { font-size: 20px; }
+.hl-panel ol { padding-left: 20px; }
+.hl-panel ol li { padding: 8px 0; border-bottom: 1px dashed #e0e0e0; font-size: 14px; line-height: 1.7; }
+.hl-panel ol li:last-child { border-bottom: none; }
+.hl-panel ol li a { text-decoration: none; font-weight: 600; }
+.hl-panel.finance ol li a { color: #d84315; }
+.hl-panel.industry ol li a { color: #1565c0; }
+.hl-panel ol li a:hover { text-decoration: underline; }
+.hl-panel .hl-meta { font-size: 12px; color: #999; }
 
 .empty { text-align: center; padding: 80px 20px; }
 .empty .icon { font-size: 64px; margin-bottom: 20px; opacity: .4; }
@@ -91,19 +96,42 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC"
   </div>
 </div>
 
-{% if highlights %}
+{% if fin_highlights or ind_highlights %}
 <div class="container" style="padding-bottom:0">
-  <div class="highlights">
-    <h2><span class="icon">🔥</span> 近30天市场要闻 Top 5</h2>
-    <ol>
-      {% for h in highlights %}
-      <li>
-        <a href="{{ h.url }}" target="_blank">{{ h.title }}</a>
-        <span class="hl-source">{{ h.source }}</span>
-        <span class="hl-date">{{ h._date }}</span>
-      </li>
-      {% endfor %}
-    </ol>
+  <div class="hl-row">
+
+    <div class="hl-panel finance">
+      <h3><span class="icon">📈</span> 近30天市场要闻</h3>
+      {% if fin_highlights %}
+      <ol>
+        {% for h in fin_highlights %}
+        <li>
+          <a href="{{ h.url }}" target="_blank">{{ h.title }}</a>
+          <div class="hl-meta">{{ h.source }} · {{ h._date }}</div>
+        </li>
+        {% endfor %}
+      </ol>
+      {% else %}
+      <p style="color:#999;font-size:13px;text-align:center;padding:16px">数据收集中...</p>
+      {% endif %}
+    </div>
+
+    <div class="hl-panel industry">
+      <h3><span class="icon">🏭</span> 近30天产业动向</h3>
+      {% if ind_highlights %}
+      <ol>
+        {% for h in ind_highlights %}
+        <li>
+          <a href="{{ h.url }}" target="_blank">{{ h.title }}</a>
+          <div class="hl-meta">{{ h.source }} · {{ h._date }}</div>
+        </li>
+        {% endfor %}
+      </ol>
+      {% else %}
+      <p style="color:#999;font-size:13px;text-align:center;padding:16px">数据收集中...</p>
+      {% endif %}
+    </div>
+
   </div>
 </div>
 {% endif %}

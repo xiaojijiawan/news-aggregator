@@ -139,14 +139,24 @@ def load_recent_data(days: int = 30) -> list[dict]:
     return all_items
 
 
-def get_monthly_highlights() -> list[dict]:
-    """Return top N market-moving news from the last 30 days."""
+def get_monthly_highlights() -> tuple[list[dict], list[dict]]:
+    """Return (top 3 finance, top 2 industry) from last 30 days."""
     recent = load_recent_data(30)
     if not recent:
-        return []
-    scored = [(market_impact_score(item), item) for item in recent]
-    scored.sort(key=lambda x: -x[0])
-    return [item for _, item in scored[:HIGHLIGHT_COUNT]]
+        return [], []
+
+    finance = [item for item in recent if item.get("category") == "金融"]
+    industry = [item for item in recent if item.get("category") != "金融"]
+
+    fin_scored = [(market_impact_score(item), item) for item in finance]
+    fin_scored.sort(key=lambda x: -x[0])
+    top_finance = [item for _, item in fin_scored[:3]]
+
+    ind_scored = [(market_impact_score(item), item) for item in industry]
+    ind_scored.sort(key=lambda x: -x[0])
+    top_industry = [item for _, item in ind_scored[:2]]
+
+    return top_finance, top_industry
 
 
 # ── Page building ────────────────────────────────────────────────────
@@ -220,9 +230,9 @@ async def generate():
     today_items = cap_news_items(today_items)
     print(f"  After cap: {len(today_items)} items")
 
-    # Get monthly highlights (last 30 days, top 5 by market impact)
-    highlights = get_monthly_highlights()
-    print(f"  Monthly highlights: {len(highlights)} items")
+    # Get monthly highlights: 3 finance + 2 industry
+    fin_highlights, ind_highlights = get_monthly_highlights()
+    print(f"  Monthly highlights: {len(fin_highlights)} finance + {len(ind_highlights)} industry")
 
     generated_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     data = build_page_data(today_items, generated_at)
@@ -232,7 +242,8 @@ async def generate():
     template = env.get_template("static_dashboard.html")
     html = template.render(
         data=data,
-        highlights=highlights,
+        fin_highlights=fin_highlights,
+        ind_highlights=ind_highlights,
         generated_at=generated_at,
         repo_url=os.environ.get("REPO_URL", "#"),
         github_actions_url=os.environ.get("ACTIONS_URL", "#"),
