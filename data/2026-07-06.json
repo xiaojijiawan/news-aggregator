@@ -1,0 +1,702 @@
+[
+  {
+    "title": "拿起手机就直播 这些边界要厘清",
+    "url": "https://news.cctv.com/2026/07/06/ARTIxm3cGXy8yqmvx5YpaluD260705.shtml",
+    "summary": "",
+    "source": "央视新闻",
+    "category": "科技"
+  },
+  {
+    "title": "什么是厄尔尼诺事件？会带来哪些影响？",
+    "url": "https://news.cctv.com/2026/07/06/ARTIFjDzaVbRGVOOGXuZe8FD260705.shtml",
+    "summary": "",
+    "source": "央视新闻",
+    "category": "金融"
+  },
+  {
+    "title": "快速进入新华网首页",
+    "url": "http://www.news.cn/",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "Français",
+    "url": "https://french.news.cn/index.htm",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "Русский язык",
+    "url": "https://russian.news.cn/index.htm",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "Português",
+    "url": "https://portuguese.news.cn/index.htm",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "国家国际发展合作署",
+    "url": "http://www.cidca.gov.cn/",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "中国互联网联合辟谣平台",
+    "url": "https://www.piyao.org.cn/",
+    "summary": "",
+    "source": "新华网",
+    "category": "科技"
+  },
+  {
+    "title": "上海企业走出去服务平台",
+    "url": "https://segg.sh.gov.cn/",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "听，这是致敬，更是礼赞",
+    "url": "https://www.news.cn/politics/leaders/20260704/708b052f438b43bda7d6fb6606b55f23/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "读懂中国共产党为什么能的关键密码（第六期）",
+    "url": "https://www.news.cn/politics/leaders/20260704/4327aafbffcf48a0993472335848793a/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "鼓岭传情 涓流聚心",
+    "url": "https://www.news.cn/sports/20260704/5668be1aea384200b3c8ea71e0398af6/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "发挥兵团优势 助力农业强国建设",
+    "url": "https://www.news.cn/politics/leaders/20260704/8c2fe29adb5d4c4982aa010f098a4148/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "深入学习贯彻习近平总书记在庆祝中国共产党成立105周年大会上重要讲话系列述评之一",
+    "url": "https://www.news.cn/politics/leaders/20260705/8a76c6ea6fd34109b5687c6d310e6fe0/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "重要讲话激发全军昂扬斗志汇聚磅礴伟力",
+    "url": "https://www.news.cn/politics/leaders/20260705/9c50b6ab54324e3fa1a442a2977973ea/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "习近平党建思想系列解读七丨何谓党性？如何锤炼坚强党性",
+    "url": "http://www.news.cn/sikepro/20260706/ad1e4c57632c46b8bfd230a95b6bce41/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "“七一勋章”获得者丨“小巷管家”吴亚琴：社区干部就是要做“一团火”",
+    "url": "https://www.news.cn/politics/20260705/80c38792e99a4f0dbd28563bd98a449d/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "海军舰艇编队面向港澳市民开放见闻：舰耀香江 寸心报国",
+    "url": "https://www.news.cn/gangao/20260705/d68fb3fbe48b450dbaa949233df76fbd/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "我国成功发射千帆极轨15组卫星",
+    "url": "https://www.news.cn/20260705/c5b2a0a1283746aa967682f7911f738e/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "科技"
+  },
+  {
+    "title": "516部队档案公开 侵华日军化学战罪行再添新铁证",
+    "url": "https://www.news.cn/politics/20260705/ec84764d225a406dae7ca61d53e61eef/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "成功卫冕！中国队夺得RoboCup机器人世界杯冠军",
+    "url": "https://www.news.cn/20260705/8724118c87214d178c5653a62f7df4d7/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "科技"
+  },
+  {
+    "title": "美丽中国行·探访三江源丨澜沧江源的生态之歌",
+    "url": "https://www.news.cn/local/20260706/c513c73a8f46439e834b594b88ee477f/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "文化中国行丨海南老爸茶 文旅新名片",
+    "url": "https://www.news.cn/photo/20260705/66a566ec51454a19b5e9bccade2f3e45/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "美丽中国丨夏日祁连风光美",
+    "url": "https://www.news.cn/photo/20260706/baeea82f32804feeb2ae2df20f98d58a/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "世界杯丨淘汰赛：挪威队战胜巴西队",
+    "url": "https://www.news.cn/sports/20260706/af3518917c854ed78214dca5cf8670fe/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "可可西里救助三只藏羚羊",
+    "url": "https://www.news.cn/photo/20260705/47a04dd970334c41bab5cff23224c418/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "镜观世界丨纳米比亚首都温得和克掠影",
+    "url": "https://www.news.cn/photo/20260705/e30ac26cb5ba42b1adce76908b0d2ad0/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "全程实拍，拾光而行，见证山南",
+    "url": "https://www.news.cn/politics/20260705/23c34a5a21dd428998de3db20da9d98b/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "习近平党建思想引领强党强国新征程",
+    "url": "https://my-h5news.app.xinhuanet.com/h5activity/yunzhibo/#/?roomId=6a4a1e77e4b087530b5c9416&isFull=0&isTest=no&isXR=0",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "中俄两军将举行“海上联合-2026”联合演习 双方参演兵力集结完毕",
+    "url": "https://www.news.cn/politics/20260705/e7ea820c16424e57920852aa59e04c17/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "遇见博物馆丨科技赋能考古 走进陕西考古博物馆",
+    "url": "https://my-h5news.app.xinhuanet.com/h5activity/yunzhibo/#/?roomId=6a4af889e4b07f3faf2af2ae&isFull=0&isTest=no&isXR=0",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "活力中国调研行丨",
+    "url": "https://www.news.cn/zt/2026hlzgx/index.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "在深圳触摸机器人产业的\"外骨骼\"",
+    "url": "https://www.news.cn/local/20260706/fd99968357d64790b9226213652c1cb7/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "科技"
+  },
+  {
+    "title": "在贺兰山下沉浸式体验跨越30年的山海情",
+    "url": "https://www.news.cn/20260705/4896868608594556abc38624577a16f9/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "《习近平关于基层工作方法论述摘编》出版发行",
+    "url": "https://www.news.cn/politics/leaders/20260705/3293652da55e4928b0075517c1fef53a/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "斯方嘉宾：《习近平谈治国理政》回应全球南方关切",
+    "url": "https://www.news.cn/world/20260705/0ea90731e9414d808a6ce929ecdf01f7/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "伟大征程丨总结百年奋斗经验 创造新的辉煌",
+    "url": "https://www.news.cn/politics/20260706/05dbb11a6f494d6599f03bad62e5242f/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "新华社评论员：紧紧依靠人民创造历史伟业",
+    "url": "https://www.news.cn/politics/leaders/20260705/98fdc26bb5c44a479764a63bedc9cbaf/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "世界读懂中国共产党丨“坚守自己的文化传统”",
+    "url": "https://www.news.cn/world/20260705/8cb914942e464b06bb56b826ad2eb91d/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "树立和践行正确政绩观",
+    "url": "https://www.news.cn/zt/slhjxzqzjg/index.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "把握好“近和远”的辩证统一关系",
+    "url": "https://www.news.cn/politics/20260706/353ff906de044645afa9a0dfc24f5c21/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "“十五五”开局之年推进水网建设观察",
+    "url": "https://www.news.cn/20260705/ee740927f11d484a95a5c4c08cb9121a/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "天问二号探测器抵达目标小行星 开始科学探测",
+    "url": "https://www.news.cn/tech/20260706/fb012696e1204d7f9014f00fcd4d0a3c/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "多部门联合部署开展安全生产“打非治违”工作",
+    "url": "https://www.news.cn/politics/20260706/51bcbb6f6ef744f29ec647dafce54c60/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "全球数字经济大会观察",
+    "url": "https://www.news.cn/fortune/20260705/459f4cd8ee4a4a97995ded78e4055ea3/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "科技"
+  },
+  {
+    "title": "中国推动AI产品\"出海\"惠全球",
+    "url": "https://www.news.cn/fortune/20260705/87d3f93d6c7c4e819f610461957c7d11/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "科技"
+  },
+  {
+    "title": "7省区部分地区有大暴雨",
+    "url": "https://www.news.cn/politics/20260706/77b9da95c54143ca9eca9f66ff3de2f2/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "广西29条河流36个站超警",
+    "url": "https://www.news.cn/local/20260705/90495ee955644e0ba233682993060e4f/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "抗击“美莎克”直击",
+    "url": "https://www.news.cn/local/20260706/22286df2bba54c9eaa1a4e546a063d21/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "应急管理部增派工作组赴桂辽",
+    "url": "https://www.news.cn/politics/20260705/008f1bebdf9546c99685f64bc71fecf1/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "哈兰德双响送巴西回家",
+    "url": "https://www.news.cn/sports/20260706/6eb8e0072925409f8c8eab90f0b2379d/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "历史射手榜更新 姆巴佩19场19球",
+    "url": "https://www.news.cn/sports/20260705/1151a2245f30476aaee221a95188487a/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "哈兰德双响送巴西回家  C罗将战亚马尔",
+    "url": "https://www.news.cn/sports/20260706/377cdf2edbd44c49905baf27f27d200c/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "美“独立日”庆祝：烟火背后的对立与分裂",
+    "url": "https://www.news.cn/world/20260705/7c1d630a0fe049e19a8d585315d3f881/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "芬兰总统斯图布会见王毅",
+    "url": "https://www.news.cn/politics/leaders/20260706/db78cb298a074583a64b3bc49a67448b/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "张国清在新疆调研",
+    "url": "https://www.news.cn/politics/leaders/20260705/e61cae3490e34b71934ba1a387886652/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "天外来客 防范有策 我国正在论证小行星防御系统",
+    "url": "https://www.news.cn/tech/20260706/14b291a118a94c3182494d1fdda343a2/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "让规则跟上时代脚步 电子商务法修正有诸多亮点",
+    "url": "https://www.news.cn/legal/20260706/2ae62d87a91b4e559702c3bfc6571174/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "擦边带货、摆拍伪造 未成年人上网,警惕这些新问题",
+    "url": "https://www.news.cn/legal/20260706/982ca9892882420e9a259a2272413ee6/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "埃德加·斯诺后人90年后“重走斯诺路”",
+    "url": "https://www.news.cn/politics/20260706/cb8a769ccd2c44ad923534676e820ce7/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "有了旅游计次票，暑假家庭出游怎样买票更划算？",
+    "url": "https://www.news.cn/fortune/20260706/3a37d830d8154dee890a72f48759d2a6/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "中国队创速度攀岩女子双人接力世界纪录",
+    "url": "https://www.news.cn/sports/20260706/3aadc58e53e6488ca8909176412a449c/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "地球磁场连续24小时发生磁暴",
+    "url": "https://www.news.cn/tech/20260706/167aa1923e9243e4b4d1d80154fb1f42/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "中国人民大学通报称蒋方舟硕士论文未发现学术不端",
+    "url": "https://education.news.cn/20260705/1c185f524cfe4083aebaf2d48828af22/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "嘴唇发紫、耳垂折痕……这些信号真的预示疾病吗",
+    "url": "https://www.news.cn/politics/20260706/4fa4ac1493d64e7e9a9c5eaa47792b69/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "广西钦州一处国道涵洞发生坍塌",
+    "url": "https://www.news.cn/local/20260706/0dfb6987941a4f0fa36352e6be7cc48b/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "中老铁路老挝段完成第一阶段钢轨打磨施工",
+    "url": "https://www.news.cn/world/20260705/2919e33887da4e2aa10e347f499ad9de/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "委内瑞拉地震死亡人数升至3342人",
+    "url": "https://www.news.cn/world/20260706/442b30cea0744ee98cc4f7143dce6d89/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "中国援助委内瑞拉首批紧急人道主义救灾物资启运",
+    "url": "https://www.news.cn/world/20260705/96b5960d350a4384a630cb6958bc2f61/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "“欧佩克+”主要产油国决定8月继续增产 维护市场稳定",
+    "url": "https://www.news.cn/world/20260706/f79d60a60ab6487994c063286590673d/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "乌克兰首都基辅传出强烈爆炸声",
+    "url": "https://www.news.cn/world/20260706/65432a038fd74eb2b7cc725d2f7a456b/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "近3日美护航通过霍尔木兹海峡的船舶仅80艘",
+    "url": "https://www.news.cn/world/20260705/baeba4ff0ccb499ca34d73b6b83d63e5/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "科威特设立1亿美元紧急应对基金",
+    "url": "https://www.news.cn/world/20260706/e6052f7761c64244ab75fb6e4a8da913/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "首秀的意义，从来不止于胜负",
+    "url": "https://www.news.cn/sports/20260705/8a2c652a92ba43a185bac196de7b249f/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "警惕高考志愿填报虚假宣传陷阱",
+    "url": "https://education.news.cn/20260704/d755a09fbbe14a1e9c66f248065d5daa/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "以严法明规促进平台经济健康发展",
+    "url": "https://www.news.cn/fortune/20260704/4aadf99cf428427f96f44f74e0ee2829/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "江西篁岭：雨后古村美如画",
+    "url": "http://www.jx.xinhuanet.com/20260706/b1d2aaf8a1b04afca726d61e97a0dbde/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "港澳青年浙江行：共探科创产业新赛道",
+    "url": "https://www.news.cn/gangao/20260705/13e46962c29f4c55963351b5ffc835a3/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "重庆44处人防工程纳凉点免费开放",
+    "url": "https://www.news.cn/local/20260705/0a171b7b9acc4199be84bd20fbd6791f/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "江城晚望 红霞漫天",
+    "url": "https://www.news.cn/local/20260705/b4e22c267ec644bd9774c2827dd1e454/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "华盛顿燃放焰火庆祝美国建国250周年",
+    "url": "https://www.news.cn/photo/20260705/f34cd13faf6b487e946c6b8d1eb84765/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "乐高乐园迎一周年 接待游客超200万人次",
+    "url": "https://www.news.cn/fortune/20260705/03727bb85f53471a9c0fbd209e706ce6/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "江都水利枢纽开闸放水 确保安全度汛",
+    "url": "https://www.news.cn/photo/20260705/34b521cddbf945a0a86946e2d5c5ead7/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "山东夏津：积极构建十分钟党群服务圈",
+    "url": "https://www.news.cn/photo/20260705/f23941af47cf4dfbac1d2bc780ceddd0/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "研学游不能只求“野趣”丢了安全",
+    "url": "https://www.news.cn/comments/20260627/67e9cb9e372a499a85c5b316427ac42c/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "这样的“微调整”，值得跟上",
+    "url": "https://www.news.cn/comments/20260624/789487e01db34cd49e7e2a2021c78ca3/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "南北两枝梅，共唱红梅赞",
+    "url": "https://www.news.cn/talking/20260630/cffdede1484849b1b9a8b5ffd57cf790/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "吴亚琴：千难万难，团结一心干事儿就不难",
+    "url": "https://www.news.cn/talking/20260701/8bdab6c38d2c4b3382954c6651167de1/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "40℃高温炙烤下，中国“降温神器”缓解欧洲酷暑焦虑",
+    "url": "https://www.news.cn/world/20260702/97be20afa67c4af18da9ef249bf82f39/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "新华社记者直击委内瑞拉震后严峻灾情",
+    "url": "https://www.news.cn/world/20260628/17be185b58084b639ee5ad2455315a89/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "实体药店开始向“健康驿站”转型",
+    "url": "https://www.news.cn/fortune/20260630/771b66207abb4fe482e09bfef5e832c7/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "暑期旅游列车，为何一席难求？",
+    "url": "https://www.news.cn/20260622/97653b5f10b64568bea91d37f8dab32b/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "算电协同（上）：从“概念”到“落地”的加速跑",
+    "url": "https://www.news.cn/tech/20260702/ba4ae8811094432f8fc4d787f4d05eae/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "算电协同（下）：如何跨越“三道坎”？",
+    "url": "https://www.news.cn/tech/20260702/bb6f73974f964404b3bbf7b9b8bcf949/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "冰雪之外 砖石有声——让历史文化建筑可读 可逛 可生活",
+    "url": "https://www.news.cn/20260628/cf950adab4af43349dc3793f46c5e71c/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "资金赋能非遗传承，千年技艺如何焕发时代活力",
+    "url": "https://www.news.cn/ci/20260612/c01a15c466c249cc8cef23681e1af764/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "端午粽悄然变“轻”",
+    "url": "https://www.news.cn/20260618/7ea8c5ef864d49d6b5cf69f285fd16d6/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "二手房交易新模式能否终结“议价拉扯”",
+    "url": "https://www.news.cn/fortune/20260610/c930a29c1dcb433d97a47b083a76e237/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "为什么说这趟高铁线路可以改写中西部交通格局",
+    "url": "https://www.news.cn/video/20260702/fdfcf12ea61b418caf2d790e0ac52afa/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  },
+  {
+    "title": "这个夏天看什么？暑期观影清单来了",
+    "url": "https://www.news.cn/fortune/20260702/c774d3b0c35c4332b2eea8f37018310b/c.html",
+    "summary": "",
+    "source": "新华网",
+    "category": "金融"
+  }
+]
